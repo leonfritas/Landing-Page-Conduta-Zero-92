@@ -1,0 +1,57 @@
+body{
+    background: #000000 url('../images/fundo.JPG') no-repeat; 
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo{
+    margin-left: 80px;
+    height: 80px;
+    width: 70px;
+    margin-top: 5px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 25px; 
+    margin-right: 80px;
+}
+
+.item{
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px rgb(26, 24, 24);
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+a:hover{
+    color: lightslategrey;
+}
+
+a:active{
+    color: transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 500px;   
+}
+
+.icones{
+    margin-right: 20px;
+}
+

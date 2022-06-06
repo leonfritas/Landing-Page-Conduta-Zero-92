@@ -1,0 +1,98 @@
+body{
+    background: #000000 url('../images/fundo.JPG') no-repeat; 
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo{
+    margin-left: 80px;
+    height: 80px;
+    width: 70px;
+    margin-top: 5px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 25px; 
+    margin-right: 80px;
+}
+
+
+.item{
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px rgb(26, 24, 24);
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+
+a:hover{
+    color: lightslategrey;
+}
+
+a:active{
+    color: transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+main{
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loja{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 30px auto;
+}
+
+.produto{
+    border: solid 1px black;
+    
+}
+
+.loja .produto{
+    width: 200px;
+    height: 350px;
+    background-color: aquamarine;  
+    
+}
+
+.loja .produto img{
+    width: 100%;
+}
+
+.loja .produto .informacoes{  
+    color: #000000;
+    background-color: white;  
+    padding: 3px;
+}
+
+.loja .produto .informacoes .titulo{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+    
+.loja .produto .informacoes .preco{
+    font-size: 21px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
