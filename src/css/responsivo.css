@@ -1,8 +1,9 @@
-@media(max-width: 1100px){
+@media(max-width: 650px){
     
     body{
         background: url(../images/fundoresponsivo.jpg);
         background-size: cover;
+        background-position: 38%;
     }
     
     .cabecalho{
@@ -27,18 +28,15 @@
     }
 
     .footer{
+        
         height: 250px;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
 
-    .icones ul{
-        flex-direction: row;
-        background-color: aqua;
-    }
+  
+    
 
-    .icon{
-        flex-direction: row;
-    }
+    
 }
