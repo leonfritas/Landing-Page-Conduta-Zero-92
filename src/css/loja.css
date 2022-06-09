@@ -1,5 +1,6 @@
 body{
-    background: #000000 url('../images/fundo.JPG') no-repeat; 
+    background: #000000 url('../images/fundo.JPG') no-repeat;
+    background-position: 30% 20%; 
 }
 
 .cabecalho {
@@ -58,7 +59,6 @@ main{
     gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
-
     margin: 30px auto;
 }
 

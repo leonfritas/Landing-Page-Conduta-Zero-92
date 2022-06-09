@@ -1,5 +1,6 @@
 body{
-    background: #000000 url('../images/fundo.JPG') no-repeat;  
+    background: url('../images/fundo.JPG') ; 
+    background-position: 30% 10%; 
 }
 
 .cabecalho {
