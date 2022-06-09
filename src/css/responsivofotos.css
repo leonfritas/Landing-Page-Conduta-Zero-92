@@ -23,4 +23,11 @@
     .galeria{
         margin: 10px 20px;
     }
+
+    .foto:hover{
+        transform: none;
+    }
+    .foto{
+        transition: none;
+    }
 }
