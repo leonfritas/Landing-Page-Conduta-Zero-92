@@ -1,4 +1,12 @@
 @media(max-width: 650px){
+    body{
+        background: url(../images/fundoresponsivo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        position: static;  
+    }
+    
     .cabecalho{
         flex-direction: column;  
     }

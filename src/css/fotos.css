@@ -1,5 +1,7 @@
 body{
-    background: linear-gradient( to bottom, rgb(28, 28, 48), rgb(233, 150, 150));  
+    background: url('../images/fundo.JPG') no-repeat fixed;
+    background-size: cover;
+
 }
 
 .cabecalho {
@@ -12,7 +14,7 @@ body{
     margin-left: 80px;
     height: 80px;
     width: 70px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .menu{

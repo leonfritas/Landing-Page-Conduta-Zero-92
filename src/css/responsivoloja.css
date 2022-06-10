@@ -1,7 +1,10 @@
 @media(max-width: 650px){
-    
     body{
-        background: linear-gradient( to bottom, rgb(28, 28, 48), rgb(233, 150, 150));  
+        background: url(../images/fundoresponsivo.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        position: static;  
     }
     
     .cabecalho{
