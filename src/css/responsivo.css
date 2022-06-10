@@ -5,6 +5,7 @@
         background-position: center;
         background-attachment: fixed; 
         position: static;  
+        width: 100%;
     }
     
     .cabecalho{
