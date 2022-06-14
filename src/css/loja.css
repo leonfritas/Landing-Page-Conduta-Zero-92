@@ -4,6 +4,12 @@ body{
 
 }
 
+@font-face{
+    font-family: 'xhers';
+    src: url('../fonts/Xhers\ Regular.otf');
+
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -30,9 +36,8 @@ body{
     color: white;
     text-decoration: none;
     text-shadow: 3px 3px 2px rgb(26, 24, 24);
-    font-family: 'Courier New', Courier, monospace;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'xhers', Courier, monospace;
+    letter-spacing: 3px;
 }
 
 
@@ -63,15 +68,13 @@ main{
     margin: 30px auto;
 }
 
-.produto{
-    border: solid 1px black;
-    
-}
+
 
 .loja .produto{
     width: 180px;
-    height: 330px;
-    background-color: aquamarine;  
+    height: 250px;
+    background-color: aquamarine; 
+    
     
 }
 
@@ -83,15 +86,17 @@ main{
     color: #000000;
     background-color: white;  
     padding: 3px;
+    font-family: 'xhers', Courier, monospace;
+    letter-spacing: 1px;
 }
 
 .loja .produto .informacoes .titulo{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 8px;
 }
     
 .loja .produto .informacoes .preco{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     display: flex;
     align-items: flex-end;

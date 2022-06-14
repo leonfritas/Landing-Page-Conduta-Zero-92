@@ -4,6 +4,12 @@ body{
 
 }
 
+@font-face{
+    font-family: 'xhers';
+    src: url('../fonts/Xhers\ Regular.otf');
+
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -29,9 +35,8 @@ body{
     color: white;
     text-decoration: none;
     text-shadow: 3px 3px 2px rgb(26, 24, 24);
-    font-family: 'Courier New', Courier, monospace;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-family: 'xhers', Courier, monospace;
+    letter-spacing: 3px;
 }
 
 a:hover{
