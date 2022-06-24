@@ -1,0 +1,111 @@
+body{
+    background: url('../images/fundo.JPG') no-repeat fixed;
+    background-size: cover;
+    background-color: white;
+
+}
+
+@font-face{
+    font-family: 'xhers';
+    src: url('../fonts/Xhers\ Regular.otf');
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo{
+    margin-left: 80px;
+    height: 80px;
+    width: 70px;
+    margin-top: 15px; 
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 25px; 
+    margin-right: 80px;
+}
+
+.item{
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px rgb(26, 24, 24);
+    font-family: 'xhers', Courier, monospace;
+    letter-spacing: 3px;
+   
+}
+
+a:hover{
+    color: lightslategrey;
+}
+
+a:active{
+    color: transparent;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.discografia{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 50px;
+    
+    
+    
+
+}
+.disco{
+    box-shadow: 3px 3px 3px 3px black;
+    margin: 20px; 
+    background: linear-gradient( to top, black, white);
+    height: 430px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.titulo{
+    text-align: center;
+    position: relative;
+    top: 4px;
+    font-size: 22px;
+    font-family: 'xhers', Times, serif;
+    letter-spacing: 3px;
+    color: #fff;
+    
+    
+}
+
+.capa{
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+.musicas{
+    margin: 20px;
+}
+
+.audio{
+    margin-top: 10px;
+    
+    
+    
+}
+
+.link{
+    
+    color: white;
+    margin-left: 10px;
+
+}
