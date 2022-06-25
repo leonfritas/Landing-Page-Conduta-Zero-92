@@ -1,0 +1,30 @@
+main {
+  
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .sobredisco{
+      margin-top: 25px;
+      text-align: center;
+      width: 800px;
+      background: #fff;
+      padding: 25px;
+      
+  }
+  
+  .sobredisco h1{
+      margin-bottom: 20px;
+  }
+  
+  .sobredisco p{
+      text-align: justify;
+      margin-bottom: 20px;
+  }
+  
+  .mackingoff img{
+  margin: 30px 10px;
+  width: 200px;
+  }
+  
