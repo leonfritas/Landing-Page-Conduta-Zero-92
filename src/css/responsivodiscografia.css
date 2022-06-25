@@ -40,6 +40,10 @@
         transform: translate(-50%, -50%);
          
     }
+
+    .disco{
+        box-shadow: none;
+    }
     
     
     
