@@ -43,8 +43,22 @@
 
     .disco{
         box-shadow: none;
+    }  
+}
+
+@media(max-width: 350px){
+
+    .disco{
+        width: 250px;
+        height: 330px;
     }
-    
-    
-    
+    .disco img{
+
+        width: 100%;
+        
+    }
+
+    audio{
+        display: none;
+    }
 }

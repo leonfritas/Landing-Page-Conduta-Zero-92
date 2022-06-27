@@ -1,0 +1,57 @@
+main {
+  
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .sobredisco{
+      margin-top: 25px;
+      text-align: center;
+      width: 800px;
+      background: rgb(27, 27, 27);
+      padding: 25px;
+      color: #fff;
+      
+  }
+  
+  .sobredisco h1{
+      margin-bottom: 20px;
+  }
+  
+  .sobredisco p{
+      text-align: justify;
+      margin-bottom: 20px;
+  }
+  
+  .mackingoff img{
+  margin: 30px 10px;
+  width: 200px;
+  }
+  footer{
+    margin: 30px;
+    text-align: center;
+  }
+
+  .botaovoltar{
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(to right, red, blue);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    transition: transform 0.5s linear;
+
+  }
+
+  .botaovoltar:hover{
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  .botaovoltar:active{
+    opacity: 1;
+    
+  }

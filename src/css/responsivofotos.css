@@ -39,4 +39,8 @@
     .foto{
         transition: none;
     }
+
+    .footer{
+        color: #000;
+    }
 }

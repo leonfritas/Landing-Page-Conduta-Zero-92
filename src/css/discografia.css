@@ -1,55 +1,3 @@
-body{
-    background: url('../images/fundo.JPG') no-repeat fixed;
-    background-size: cover;
-    background-color: white;
-}
-
-@font-face{
-    font-family: 'xhers';
-    src: url('../fonts/Xhers\ Regular.otf');
-}
-
-.cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-}
-
-.logo{
-    margin-left: 80px;
-    height: 80px;
-    width: 70px;
-    margin-top: 15px; 
-}
-
-.menu{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    font-size: 25px; 
-    margin-right: 80px;
-}
-
-.item{
-    color: white;
-    text-decoration: none;
-    text-shadow: 3px 3px 2px rgb(26, 24, 24);
-    font-family: 'xhers', Courier, monospace;
-    letter-spacing: 3px;
-}
-
-a:hover{
-    color: lightslategrey;
-}
-
-a:active{
-    color: transparent;
-}
-
-ul{
-    list-style-type: none;
-}
-
 .discografia{
     display: flex;
     justify-content: space-evenly;
@@ -101,3 +49,5 @@ ul{
     padding: 5px;
     border-radius: 30px; 
 }
+
+
