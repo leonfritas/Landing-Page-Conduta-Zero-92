@@ -1,4 +1,9 @@
 # Landing-Page-Conduta-Zero-92
 
-<p>Landing page em construção...</p>
-![LandingPageCZ92](https://user-images.githubusercontent.com/102994125/177173339-817dc271-f1ec-450a-8555-2ece43100d8f.gif)
+<p>Landing page criada para grupo musical, contém 5 abas, Home, Loja, Discografia, Fotos e Contato, na aba de Discografia também contém links para um breve resumo sobre o albúm selecionado.</p>
+<p>Tecnologias Utilizadas:</p>
+- HTML
+_ CSS
+
+<img src="LandingPageCZ92.gif" alt="GifDesktop" />
+
