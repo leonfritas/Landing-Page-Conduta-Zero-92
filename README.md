@@ -5,5 +5,5 @@
 - HTML
 _ CSS
 
-<img src="LandingPageCZ92.gif" alt="GifDesktop" />
+[<img src="LandingPageCZ92.gif" alt="GifDesktop">]
 
