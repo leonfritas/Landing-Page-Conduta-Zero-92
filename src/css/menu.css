@@ -29,20 +29,27 @@ body{
     gap: 30px;
     font-size: 25px; 
     margin-right: 80px;
+    
 }
 
 .item{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-shadow: 3px 3px 2px rgb(26, 24, 24);
     font-family: 'xhers', Courier, monospace;
     letter-spacing: 3px;
+    transition: 0.3s;
    
 }
 
-a:hover{
-    color: lightslategrey;
+.item:hover{
+    transform: scale(1.8);
+    letter-spacing: 4px;
 }
+
+
+
+
 
 a:active{
     color: transparent;
