@@ -9,6 +9,6 @@
 [<img src="LandingPageCZ92.gif" alt="GifDesktop">]
 <br>
 <br>
-[<img src="LandingPageCZ92-responsivo" alt="GifMobile">]
+[<img src="LandingPageCZ92-responsivo.gif" alt="GifMobile">]
 
 
