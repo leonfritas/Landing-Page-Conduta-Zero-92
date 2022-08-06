@@ -44,6 +44,7 @@
     .disco{
         box-shadow: none;
     }  
+    
 }
 
 @media(max-width: 350px){
@@ -61,4 +62,5 @@
     audio{
         display: none;
     }
+    
 }

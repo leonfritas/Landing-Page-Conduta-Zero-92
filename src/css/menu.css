@@ -1,6 +1,14 @@
 body{
     background: url('../images/fundo.jpg') no-repeat fixed;
     background-size: cover;
+    transition: 0.5s ease-in-out;
+
+}
+
+body.mostrar{
+    background: url('../images/fundo-borrado.png') no-repeat fixed;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
 
 }
 
@@ -38,21 +46,20 @@ body{
     text-shadow: 3px 3px 2px rgb(26, 24, 24);
     font-family: 'xhers', Courier, monospace;
     letter-spacing: 3px;
-    transition: 0.3s;
+    transition: 0.1s;
+    
    
 }
 
 .item:hover{
     transform: scale(1.8);
-    letter-spacing: 4px;
+    
+    border-bottom: 3px solid white;
 }
-
-
-
-
 
 a:active{
     color: transparent;
+    
 }
 
 ul{

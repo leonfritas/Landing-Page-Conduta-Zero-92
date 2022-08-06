@@ -1,7 +1,23 @@
-main {
+@-webkit-keyframes debaixoparacima {
+  0%{
+    transform: translateY(100px);
+    opacity: 0.1;
+  }
+
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+
+.info-disco{
   
     display: flex;
     justify-content: center;
+    animation: debaixoparacima 0.5s;
     
   }
   
@@ -28,30 +44,21 @@ main {
   margin: 30px 10px;
   width: 200px;
   }
-  footer{
-    margin: 30px;
-    text-align: center;
+
+  .mais-um-tempo-container,
+  .cidade-das-palhas-container,
+  .aniquilacao-container,
+  .quatro-paredes-container,
+  .alo-deus-container{
+    display: none;
   }
 
-  .botaovoltar{
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
-    color: #fff;
-    background: linear-gradient(to right, red, blue);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
-    transition: transform 0.5s linear;
-
+  .mais-um-tempo-container.mostrardesc,
+  .cidade-das-palhas-container.mostrardesc,
+  .aniquilacao-container.mostrardesc,
+  .quatro-paredes-container.mostrardesc,
+  .alo-deus-container.mostrardesc{
+    display: flex;
   }
 
-  .botaovoltar:hover{
-    cursor: pointer;
-    opacity: 0.8;
-  }
-
-  .botaovoltar:active{
-    opacity: 1;
-    
-  }
+  
