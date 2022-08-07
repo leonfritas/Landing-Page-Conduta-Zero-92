@@ -5,7 +5,7 @@
         background-position: center;
         background-attachment: fixed; 
         position: static;  
-        width: 100%;
+        
     }
     
     .cabecalho{
@@ -43,6 +43,11 @@
     iframe{
         width: 80%;
         height: 20%;
+    }
+
+    .home-container{
+        min-height: 10vh;
+        
     }
 }
 

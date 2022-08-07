@@ -18,6 +18,11 @@ body.mostrar{
 
 }
 
+@font-face {
+    font-family: 'merrant';
+    src: url(../fonts/MERRANT-REGULAR.OTF);
+}
+
 .cabecalho {
     display: flex;
     align-items: center;

@@ -1,6 +1,6 @@
 @media(max-width: 650px){
     body{
-        background: url(../images/fundoresponsivo.jpg);
+        background: url(../images/background.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed; 

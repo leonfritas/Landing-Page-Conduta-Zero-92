@@ -33,11 +33,17 @@
   
   .sobredisco h1{
       margin-bottom: 20px;
+      font-family: 'merrant';
   }
   
   .sobredisco p{
       text-align: justify;
       margin-bottom: 20px;
+      font-family: 'merrant';
+  }
+
+  .sobredisco ul{
+    font-family: 'merrant';
   }
   
   .mackingoff img{
