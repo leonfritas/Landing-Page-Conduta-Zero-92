@@ -7,10 +7,21 @@ const contato = document.getElementById("contato")
 const body = document.getElementById("body")
 const disco = document.getElementsByClassName("disco")
 const discodesc = document.getElementsByClassName("discodesc")
+const chamarCarrossel = document.querySelectorAll(".foto")
 
 
-console.log(disco)
-console.log(discodesc)
+console.log(chamarCarrossel)
+
+chamarCarrossel.forEach((item) => {
+    item.addEventListener("click", ()=>{
+        containers[4].classList.add("mostrar")
+        containers[3].classList.remove("mostrar")
+    })
+
+})
+
+
+
 
 disco[4].addEventListener("click", ()=>{
     discodesc[0].classList.add("mostrardesc")
@@ -46,6 +57,7 @@ home.addEventListener("click", () => {
     containers[2].classList.remove("mostrar")
     containers[3].classList.remove("mostrar")
     containers[4].classList.remove("mostrar")
+    containers[5].classList.remove("mostrar")
     body.classList.remove("mostrar")
     discodesc[0].classList.remove("mostrardesc")
     discodesc[1].classList.remove("mostrardesc")
@@ -61,6 +73,7 @@ loja.addEventListener("click", ()=>{
     containers[2].classList.remove("mostrar")
     containers[3].classList.remove("mostrar")
     containers[4].classList.remove("mostrar")
+    containers[5].classList.remove("mostrar")
     body.classList.add("mostrar")
     discodesc[0].classList.remove("mostrardesc")
     discodesc[1].classList.remove("mostrardesc")
@@ -75,6 +88,7 @@ discografia.addEventListener("click", ()=>{
     containers[1].classList.remove("mostrar")
     containers[3].classList.remove("mostrar")
     containers[4].classList.remove("mostrar")
+    containers[5].classList.remove("mostrar")
     body.classList.add("mostrar")
     discodesc[0].classList.remove("mostrardesc")
     discodesc[1].classList.remove("mostrardesc")
@@ -89,6 +103,7 @@ fotos.addEventListener("click", ()=>{
     containers[1].classList.remove("mostrar")
     containers[2].classList.remove("mostrar")
     containers[4].classList.remove("mostrar")
+    containers[5].classList.remove("mostrar")
     body.classList.add("mostrar")
     discodesc[0].classList.remove("mostrardesc")
     discodesc[1].classList.remove("mostrardesc")
@@ -98,8 +113,9 @@ fotos.addEventListener("click", ()=>{
 })
 
 contato.addEventListener("click", ()=>{
-    containers[4].classList.add("mostrar")
+    containers[5].classList.add("mostrar")
     containers[0].classList.remove("mostrar")
+    containers[4].classList.remove("mostrar")
     containers[1].classList.remove("mostrar")
     containers[2].classList.remove("mostrar")
     containers[3].classList.remove("mostrar")
