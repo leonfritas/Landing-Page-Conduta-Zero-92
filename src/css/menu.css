@@ -1,25 +1,19 @@
-
-
 body{
     background: url('../images/fundo.jpg') no-repeat fixed;
     background-size: cover;
     transition: 0.5s ease-in-out;
     min-height: 100vh;
-
 }
-
 
 body.mostrar{
     backdrop-filter: blur(5px);
     background-size: cover;
     transition: 0.5s ease-in-out;
-
 }
 
 @font-face{
     font-family: 'xhers';
     src: url('../fonts/Xhers\ Regular.otf');
-
 }
 
 @font-face {
@@ -46,7 +40,6 @@ body.mostrar{
     gap: 30px;
     font-size: 25px; 
     margin-right: 80px;
-    
 }
 
 .item{
@@ -56,19 +49,15 @@ body.mostrar{
     font-family: 'xhers', Courier, monospace;
     letter-spacing: 3px;
     transition: 0.1s;
-    
-   
 }
 
 .item:hover{
     transform: scale(1.8);
-    
     border-bottom: 3px solid white;
 }
 
 a:active{
     color: transparent;
-    
 }
 
 ul{

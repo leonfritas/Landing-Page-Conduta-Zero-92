@@ -2,8 +2,6 @@ const setaVoltar = document.getElementById("setavoltar");
 const setaAvancar = document.getElementById("setaavancar");
 const fotosCarrossel = document.getElementsByClassName("foto-carrosel")
 
-
-
 let imagemAtual = 0;
 
 setaAvancar.addEventListener("click", function () {
@@ -12,8 +10,6 @@ setaAvancar.addEventListener("click", function () {
   }
 
   imagemAtual++;
-
- 
   esconderImagemAberta();
   mostrarImagem();
   mostrarOuEsconderSetas();
@@ -24,9 +20,7 @@ setaVoltar.addEventListener("click", function () {
     return;
   }
  
-
   imagemAtual--;
-
   esconderImagemAberta();
   mostrarImagem();
   mostrarOuEsconderSetas();
