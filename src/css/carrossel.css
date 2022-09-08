@@ -44,11 +44,18 @@
 }
 
 @media (max-width: 500px) {
+  
+  .slide{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
   .slide img {
-    width: 70%;
+    width: 98%;
+    
   }
   .seta img {
-    width: 25px;
+    width: 35px;
   }
   .setaavancar {
     right: 5%;
