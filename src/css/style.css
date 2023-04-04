@@ -242,7 +242,7 @@
   ); */
   padding: 50px 20px 20px 20px;
   border-radius: 20px;
-  border: 1px black solid;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 300px;
   display: flex;
   flex-direction: column;

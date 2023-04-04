@@ -63,3 +63,7 @@ a:active{
 ul{
     list-style-type: none;
 }
+
+.cabecalho input{
+    display: none;
+  }

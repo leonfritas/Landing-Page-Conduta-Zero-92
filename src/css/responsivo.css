@@ -84,7 +84,7 @@ span{
     height: 2px;
     top: 29px;
     left: 15px;
-    transition: 0.5s ease-in-out; 
+    transition: 0.6s ease-in-out; 
   }
 
  
@@ -135,17 +135,39 @@ span{
 }
 .cabecalho nav input:checked ~ ul{
   display: block;
+  animation: delapraca 0.5s;
+}
 
-  
+/* .cabecalho nav ul{
+  display: block;
+} */
+
+/* .cabecalho nav input:checked ~ ul{
+  display: block;
+  animation: delapraca 0.5s;
+}
+ */
+
+
+
+
+
+@-webkit-keyframes delapraca {
+  0% {
+    opacity: 0;
+    transform:translateX(50px)
+  }
+
+  100% {
+    opacity: 1;
+    transform:translateX(0)
+  }
 }
 
 
-/* .cabecalho nav{
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.cabecalho nav{
   z-index: 1;
-} */
+}
 
 .cabecalho nav ul{
   width: 200px;
@@ -158,7 +180,12 @@ span{
 nav li{
   text-align: right;
   width: 150px;
-   margin-left: -20px; 
+  margin-left: -20px;
+}
+
+.item:hover{
+  transform: scale(1.8);
+  border-bottom: none;
 }
 
 
@@ -189,6 +216,13 @@ nav li{
     margin-bottom: 30px;
     margin-top: 30px;
   }
+
+  .loja .produto img:hover {
+    transform: none;
+    transition: 0.5s ease-in-out;
+  }
+
+
 
   /* Discografia */
 
@@ -241,6 +275,13 @@ nav li{
     width: 300px;
 
   } */
+
+  /* CADASTRO */
+
+  .botao{
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 350px) {
