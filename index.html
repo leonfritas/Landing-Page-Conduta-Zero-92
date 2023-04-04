@@ -30,12 +30,19 @@
     <header class="cabecalho">
         <img class="logo" src="src/images/condutalogo.png" alt="logo conduta092">
         <nav>
+
+            <input type="checkbox" id="menu-hamburguer" />
+            <label for="menu-hamburguer">
+                <div class="menuHamburguer">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
             <ul class="menu">
                 <li><a id="home" class="item" href="#"><b>Home</b></a></li>
                 <li><a id="loja" class="item" href="#"><b>Loja</b></a></li>
-                <li><a id="disc" class="item" href="#"><b>Discografia</b></a></li>
+                <li><a id="disc" class="item ajusteLi" href="#"><b>Discografia</b></a></li>
                 <li><a id="fotos" class="item" href="#"><b>Fotos</b></a></li>
-                <li><a id="contato" class="item" href="#"><b>Contato</b></a></li>
+                <li><a id="contato" class="item" href="#"><b>Cadastro</b></a></li>
             </ul>
         </nav>
     </header>
@@ -222,6 +229,7 @@
                 <li>Refém</li>
 
             </ul>
+            <br>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ICLIuAe1v_g"
                 title="YouTube video player" frameborder="0"
@@ -230,10 +238,10 @@
 
             <br>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uqeUOCwQdIA"
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqeUOCwQdIA"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen></iframe> -->
 
 
 
@@ -264,6 +272,7 @@
                 <li>11 da Noite</li>
                 <li>Karatê Baré</li>
             </ul>
+            <br>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VzosRLdCqbE"
                 title="YouTube video player" frameborder="0"
@@ -298,6 +307,7 @@
                 <li>Sólida Prisão</li>
                 <li>Domingo</li>
             </ul>
+            <br>
 
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WlsECX_iYkU"
@@ -517,7 +527,7 @@
                 <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
                 <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br">
 
-                <legend class="titulo"><b>Cadastro</b></legend>
+                
                 <div class="label-input">
                     <label for="nome"><strong>Nome:</strong></label>
                     <input type="text" name="name" id="nome" class="campo" required>

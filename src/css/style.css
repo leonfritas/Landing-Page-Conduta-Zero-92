@@ -233,16 +233,24 @@
 }
 
 .formulario {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgb(56, 1, 1),
     rgba(5, 46, 21, 0.925),
     rgb(2, 2, 82),
     rgb(53, 50, 1)
-  );
-  padding: 20px;
+  ); */
+  padding: 50px 20px 20px 20px;
   border-radius: 20px;
   border: 1px black solid;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.campo{
+  margin-top: 10px;
 }
 
 .titulo {
