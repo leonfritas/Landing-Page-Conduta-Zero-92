@@ -1,13 +1,12 @@
 @media (max-width: 650px) {
   body {
 
-    background: url(../images/bgResponsivo.jpg) center;
+    background: url(../images/bgResponsivo.jpg) no-repeat center;
     background-size: cover;
-    /* background: url(../images/fundoresponsivo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: static; */
+    /* background-attachment: fixed;
+    position: static;
+    background-position:right; */
+    
   }
 
   /* Menu */

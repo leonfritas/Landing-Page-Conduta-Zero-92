@@ -53,7 +53,8 @@
 .tupa-container,
 .cadente-container,
 .juma-container,
-.arma-container{
+.arma-container,
+.tropical-container{
   display: none;
 }
 
@@ -65,6 +66,7 @@
 .tupa-container.mostrardesc,
 .cadente-container.mostrardesc,
 .juma-container.mostrardesc,
-.arma-container.mostrardesc {
+.arma-container.mostrardesc,
+.tropical-container.mostrardesc {
   display: flex;
 }

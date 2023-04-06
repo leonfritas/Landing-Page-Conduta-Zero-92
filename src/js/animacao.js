@@ -10,7 +10,7 @@ const discodesc = document.getElementsByClassName("discodesc")
 const chamarCarrossel = document.querySelectorAll(".foto")
 
 
-console.log(chamarCarrossel)
+// console.log(chamarCarrossel)
 
 chamarCarrossel.forEach((item) => {
     item.addEventListener("click", ()=>{
@@ -20,152 +20,124 @@ chamarCarrossel.forEach((item) => {
 
 })
 
-disco[8].addEventListener("click", ()=>{
+
+
+disco[9].addEventListener("click", ()=>{
     discodesc[0].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[7].addEventListener("click", ()=>{
+disco[8].addEventListener("click", ()=>{
     discodesc[1].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[6].addEventListener("click", ()=>{
+disco[7].addEventListener("click", ()=>{
     discodesc[2].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[5].addEventListener("click", ()=>{
+disco[6].addEventListener("click", ()=>{
     discodesc[3].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[4].addEventListener("click", ()=>{
+disco[5].addEventListener("click", ()=>{
     discodesc[4].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
+
+disco[4].addEventListener("click", ()=>{
+    discodesc[5].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 
 })
 
 disco[3].addEventListener("click", ()=>{
-    discodesc[5].classList.add("mostrardesc")
-    containers[2].classList.remove("mostrar")
-})
-
-disco[2].addEventListener("click", ()=>{
     discodesc[6].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[1].addEventListener("click", ()=>{
+disco[2].addEventListener("click", ()=>{
     discodesc[7].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[0].addEventListener("click", ()=>{
+disco[1].addEventListener("click", ()=>{
     discodesc[8].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-
+disco[0].addEventListener("click", ()=>{
+    discodesc[9].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
 
 
 home.addEventListener("click", () => {
+    for(i = 0; i <= 5; i++){
+        containers[i].classList.remove("mostrar")
+    }
     containers[0].classList.add("mostrar")
-    containers[1].classList.remove("mostrar")
-    containers[2].classList.remove("mostrar")
-    containers[3].classList.remove("mostrar")
-    containers[4].classList.remove("mostrar")
-    containers[5].classList.remove("mostrar")
+    //
     body.classList.remove("mostrar")
-    discodesc[0].classList.remove("mostrardesc")
-    discodesc[1].classList.remove("mostrardesc")
-    discodesc[2].classList.remove("mostrardesc")
-    discodesc[3].classList.remove("mostrardesc")
-    discodesc[4].classList.remove("mostrardesc")
-    discodesc[5].classList.remove("mostrardesc")
-    discodesc[6].classList.remove("mostrardesc")
-    discodesc[7].classList.remove("mostrardesc")
-    discodesc[8].classList.remove("mostrardesc")
-    
-
-
+    //
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc")
+    }
 })
 
 loja.addEventListener("click", ()=>{
+    for(i = 0; i <=5; i++){
+        containers[i].classList.remove("mostrar")
+    }
+    //
     containers[1].classList.add("mostrar")
-    containers[0].classList.remove("mostrar")
-    containers[2].classList.remove("mostrar")
-    containers[3].classList.remove("mostrar")
-    containers[4].classList.remove("mostrar")
-    containers[5].classList.remove("mostrar")
+    //
     body.classList.add("mostrar")
-    discodesc[0].classList.remove("mostrardesc")
-    discodesc[1].classList.remove("mostrardesc")
-    discodesc[2].classList.remove("mostrardesc")
-    discodesc[3].classList.remove("mostrardesc")
-    discodesc[4].classList.remove("mostrardesc")
-    discodesc[5].classList.remove("mostrardesc")
-    discodesc[6].classList.remove("mostrardesc")
-    discodesc[7].classList.remove("mostrardesc")
-    discodesc[8].classList.remove("mostrardesc")
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc") 
+    }  
 })
 
 discografia.addEventListener("click", ()=>{
+    for(i = 0; i <=5; i++){
+        containers[i].classList.remove("mostrar")
+    }
+    //
     containers[2].classList.add("mostrar")
-    containers[0].classList.remove("mostrar")
-    containers[1].classList.remove("mostrar")
-    containers[3].classList.remove("mostrar")
-    containers[4].classList.remove("mostrar")
-    containers[5].classList.remove("mostrar")
+    //
     body.classList.add("mostrar")
-    discodesc[0].classList.remove("mostrardesc")
-    discodesc[1].classList.remove("mostrardesc")
-    discodesc[2].classList.remove("mostrardesc")
-    discodesc[3].classList.remove("mostrardesc")
-    discodesc[4].classList.remove("mostrardesc")
-    discodesc[5].classList.remove("mostrardesc")
-    discodesc[6].classList.remove("mostrardesc")
-    discodesc[7].classList.remove("mostrardesc")
-    discodesc[8].classList.remove("mostrardesc")
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc")  
+    }   
 })
 
 fotos.addEventListener("click", ()=>{
+    for(i = 0; i <=5; i++){
+        containers[i].classList.remove("mostrar")
+    }
+    //
     containers[3].classList.add("mostrar")
-    containers[0].classList.remove("mostrar")
-    containers[1].classList.remove("mostrar")
-    containers[2].classList.remove("mostrar")
-    containers[4].classList.remove("mostrar")
-    containers[5].classList.remove("mostrar")
+    //
     body.classList.add("mostrar")
-    discodesc[0].classList.remove("mostrardesc")
-    discodesc[1].classList.remove("mostrardesc")
-    discodesc[2].classList.remove("mostrardesc")
-    discodesc[3].classList.remove("mostrardesc")
-    discodesc[4].classList.remove("mostrardesc")
-    discodesc[5].classList.remove("mostrardesc")
-    discodesc[6].classList.remove("mostrardesc")
-    discodesc[7].classList.remove("mostrardesc")
-    discodesc[8].classList.remove("mostrardesc")
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc") 
+    }    
 })
 
 contato.addEventListener("click", ()=>{
+    for(i = 0; i <=5; i++){
+        containers[i].classList.remove("mostrar")
+    }
+    //
     containers[5].classList.add("mostrar")
-    containers[0].classList.remove("mostrar")
-    containers[4].classList.remove("mostrar")
-    containers[1].classList.remove("mostrar")
-    containers[2].classList.remove("mostrar")
-    containers[3].classList.remove("mostrar")
+    //
     body.classList.add("mostrar")
-    discodesc[0].classList.remove("mostrardesc")
-    discodesc[1].classList.remove("mostrardesc")
-    discodesc[2].classList.remove("mostrardesc")
-    discodesc[3].classList.remove("mostrardesc")
-    discodesc[4].classList.remove("mostrardesc")
-    discodesc[5].classList.remove("mostrardesc")
-    discodesc[6].classList.remove("mostrardesc")
-    discodesc[7].classList.remove("mostrardesc")
-    discodesc[8].classList.remove("mostrardesc")
 
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc")  
+    }
 })
 
 
