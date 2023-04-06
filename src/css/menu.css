@@ -1,15 +1,17 @@
 body{
     background: url('../images/fundo.jpg') no-repeat fixed;
-    background-size: cover;
-    transition: 0.5s ease-in-out;
-    min-height: 100vh;
+    /* background-size: cover; */
+    /* transition: 0.5s ease-in-out;
+    min-height: 100vh; */
+  
+    
 }
 
-body.mostrar{
+/* body.mostrar{
     backdrop-filter: blur(5px);
     background-size: cover;
     transition: 0.5s ease-in-out;
-}
+} */
 
 @font-face{
     font-family: 'xhers';
