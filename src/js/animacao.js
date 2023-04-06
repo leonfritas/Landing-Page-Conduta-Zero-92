@@ -20,34 +20,52 @@ chamarCarrossel.forEach((item) => {
 
 })
 
-
-
-
-disco[4].addEventListener("click", ()=>{
+disco[8].addEventListener("click", ()=>{
     discodesc[0].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[3].addEventListener("click", ()=>{
+disco[7].addEventListener("click", ()=>{
     discodesc[1].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
-
 })
 
-disco[2].addEventListener("click", ()=>{
+disco[6].addEventListener("click", ()=>{
     discodesc[2].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[1].addEventListener("click", ()=>{
+disco[5].addEventListener("click", ()=>{
     discodesc[3].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
 })
 
-disco[0].addEventListener("click", ()=>{
+disco[4].addEventListener("click", ()=>{
     discodesc[4].classList.add("mostrardesc")
     containers[2].classList.remove("mostrar")
+
 })
+
+disco[3].addEventListener("click", ()=>{
+    discodesc[5].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
+
+disco[2].addEventListener("click", ()=>{
+    discodesc[6].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
+
+disco[1].addEventListener("click", ()=>{
+    discodesc[7].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
+
+disco[0].addEventListener("click", ()=>{
+    discodesc[8].classList.add("mostrardesc")
+    containers[2].classList.remove("mostrar")
+})
+
 
 
 
@@ -64,6 +82,12 @@ home.addEventListener("click", () => {
     discodesc[2].classList.remove("mostrardesc")
     discodesc[3].classList.remove("mostrardesc")
     discodesc[4].classList.remove("mostrardesc")
+    discodesc[5].classList.remove("mostrardesc")
+    discodesc[6].classList.remove("mostrardesc")
+    discodesc[7].classList.remove("mostrardesc")
+    discodesc[8].classList.remove("mostrardesc")
+    
+
 
 })
 
@@ -80,6 +104,10 @@ loja.addEventListener("click", ()=>{
     discodesc[2].classList.remove("mostrardesc")
     discodesc[3].classList.remove("mostrardesc")
     discodesc[4].classList.remove("mostrardesc")
+    discodesc[5].classList.remove("mostrardesc")
+    discodesc[6].classList.remove("mostrardesc")
+    discodesc[7].classList.remove("mostrardesc")
+    discodesc[8].classList.remove("mostrardesc")
 })
 
 discografia.addEventListener("click", ()=>{
@@ -95,6 +123,10 @@ discografia.addEventListener("click", ()=>{
     discodesc[2].classList.remove("mostrardesc")
     discodesc[3].classList.remove("mostrardesc")
     discodesc[4].classList.remove("mostrardesc")
+    discodesc[5].classList.remove("mostrardesc")
+    discodesc[6].classList.remove("mostrardesc")
+    discodesc[7].classList.remove("mostrardesc")
+    discodesc[8].classList.remove("mostrardesc")
 })
 
 fotos.addEventListener("click", ()=>{
@@ -110,6 +142,10 @@ fotos.addEventListener("click", ()=>{
     discodesc[2].classList.remove("mostrardesc")
     discodesc[3].classList.remove("mostrardesc")
     discodesc[4].classList.remove("mostrardesc")
+    discodesc[5].classList.remove("mostrardesc")
+    discodesc[6].classList.remove("mostrardesc")
+    discodesc[7].classList.remove("mostrardesc")
+    discodesc[8].classList.remove("mostrardesc")
 })
 
 contato.addEventListener("click", ()=>{
@@ -125,6 +161,11 @@ contato.addEventListener("click", ()=>{
     discodesc[2].classList.remove("mostrardesc")
     discodesc[3].classList.remove("mostrardesc")
     discodesc[4].classList.remove("mostrardesc")
+    discodesc[5].classList.remove("mostrardesc")
+    discodesc[6].classList.remove("mostrardesc")
+    discodesc[7].classList.remove("mostrardesc")
+    discodesc[8].classList.remove("mostrardesc")
+
 })
 
 
