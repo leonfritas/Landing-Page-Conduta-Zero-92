@@ -132,7 +132,7 @@ span{
 }
 .cabecalho nav input:checked ~ ul{
   display: block;
-  animation: delapraca 0.5s;
+   /* animation: delapraca 0.5s;  */
 }
 
 /* .cabecalho nav ul{

@@ -643,35 +643,52 @@
     </section>
 
     <section class="conteudo contato-container">
-        
-            <form class="formulario" action="https://api.staticforms.xyz/submit" method="POST">
-                <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
-                <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br">
+
+        <!-- <div>
+            <div class="contato-imagem">
+                <img src="./src/images/showlivre10.png" alt="">
+
+            </div>
+         -->
+            <form class="formulario">
+                <!-- action="https://api.staticforms.xyz/submit" method="POST" -->
+                <!-- <input type="hidden" name="accessKey" value="6a3012d9-648b-4396-b83d-d84baf833bb1">
+                <input type="hidden" name="redirectTo" value="https://www.condutazero92.com.br"> -->
 
                 
                 <div class="label-input">
                     <label for="nome"><strong>Nome:</strong></label>
-                    <input type="text" name="name" id="nome" class="campo" required>
+                    <input type="text"  name="name" id="nome" class="campo campoNome" >
                 </div>
                 <br>
                 
                 <br>
                 <div class="label-input">
                     <label for="email"><strong>E-mail:</strong></label>
-                    <input type="text" name="email" id="email" class="campo" required>
+                    <input type="text" name="email" id="email" class="campo campoEmail" >
                 </div>
                 <br>
-                <div class="label-input">
+                <div class="divCampoData">
                     <label for="Data"><strong>Data de nascimento:</strong></label>
-                    <input type="date" name="name" id="data" class="campodata" required>
+                    <input type="date" name="name" id="data" class="campodata" >
                 </div>
-                <button class="botao" type="submit"><b>Enviar</b></button>
+                <div class="divBotao ">
+                    <button class="botao" onclick="ingresso(event)" type="button"><b>Enviar</b></button>
+                </div>
 
+                <div class="agradecimento esconder">
+                    <p>ta fdd.</p>
+                </div>
+                
             </form>
+
+        <!-- </div> -->
+
         
     </section>
     <script src="src/js/carrossel.js"></script>
     <script src="src/js/animacao.js"></script>
+    <script src="src/js/contato.js"></script>
 </body>
 
 </html>
