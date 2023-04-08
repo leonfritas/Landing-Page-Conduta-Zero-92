@@ -1,0 +1,14 @@
+{
+  "name": "landing-page-conduta-zero-92-main",
+  "version": "1.0.0",
+  "description": "<p>Landing page criada para grupo musical, contém 5 abas, Home, Loja, Discografia, Fotos e Contato, na aba de Discografia também contém links para um breve resumo sobre o albúm selecionado.</p> <p>Tecnologias Utilizadas:</p> - HTML  - <br> - CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.2.0"
+  }
+}

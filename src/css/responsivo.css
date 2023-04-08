@@ -279,6 +279,22 @@ nav li{
     margin-top: 30px;
   }
 
+  .formulario{
+    width: 80%;
+  }
+
+  .labelNome, .labelEmail{
+    display: none;
+  }
+  .campo { 
+    width: 100%;
+    padding: 5px;
+  }
+  input::placeholder{
+
+    color:white;
+  }
+
 }
 
 @media (max-width: 350px) {

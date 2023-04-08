@@ -1,3 +1,4 @@
+
 const campoNome = document.querySelector('.campoNome')
 const campoEmail = document.querySelector('.campoEmail')
 const campoData = document.querySelector('.campodata')
@@ -6,6 +7,9 @@ const labelInput = document.getElementsByClassName('label-input')
 const divCampoData = document.getElementsByClassName('divCampoData')
 const botaoEnviar = document.getElementsByClassName('botao')
 const cadastroContainer = document.getElementsByClassName('contato-container')
+
+
+
 
 
 const ingresso = (event)=>{
@@ -17,8 +21,18 @@ const ingresso = (event)=>{
         for(i = 0; i <= 1; i++){
             labelInput[i].classList.add('esconder')
         }
-        agradecimento[0].classList.remove('esconder')     
+        agradecimento[0].classList.remove('esconder')
+        console.log(event)  
+        
+        function enviarParametros(){
+
+            paramNome = campoNome.value
+
+        }
+
         event.preventDefault()
+
+
         const resetarForm = ()=>{
             campoNome.value = '' 
             campoEmail.value = '' 
@@ -35,6 +49,8 @@ const ingresso = (event)=>{
         alert('Preencha todos os campos.')
         event.preventDefault()
     }
+
+   
 }
 
 
