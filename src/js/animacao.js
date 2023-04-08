@@ -8,6 +8,7 @@ const body = document.getElementById("body")
 const disco = document.getElementsByClassName("disco")
 const discodesc = document.getElementsByClassName("discodesc")
 const chamarCarrossel = document.querySelectorAll(".foto")
+const jogo = document.getElementById("jogo")
 
 
 // console.log(chamarCarrossel)
@@ -75,7 +76,7 @@ disco[0].addEventListener("click", ()=>{
 
 
 home.addEventListener("click", () => {
-    for(i = 0; i <= 5; i++){
+    for(i = 0; i <= 6; i++){
         containers[i].classList.remove("mostrar")
     }
     containers[0].classList.add("mostrar")
@@ -88,7 +89,7 @@ home.addEventListener("click", () => {
 })
 
 loja.addEventListener("click", ()=>{
-    for(i = 0; i <=5; i++){
+    for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
     //
@@ -101,7 +102,7 @@ loja.addEventListener("click", ()=>{
 })
 
 discografia.addEventListener("click", ()=>{
-    for(i = 0; i <=5; i++){
+    for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
     //
@@ -114,7 +115,7 @@ discografia.addEventListener("click", ()=>{
 })
 
 fotos.addEventListener("click", ()=>{
-    for(i = 0; i <=5; i++){
+    for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
     //
@@ -127,7 +128,7 @@ fotos.addEventListener("click", ()=>{
 })
 
 contato.addEventListener("click", ()=>{
-    for(i = 0; i <=5; i++){
+    for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
     //
@@ -140,4 +141,18 @@ contato.addEventListener("click", ()=>{
     }
 })
 
+jogo.addEventListener("click", ()=>{
+    for(i = 0; i <=6; i++){
+        containers[i].classList.remove("mostrar")
+    }
+    //
+    containers[6].classList.add("mostrar")
+    //
+    body.classList.add("mostrar")
 
+    for(i = 0; i <= 9; i++){
+        discodesc[i].classList.remove("mostrardesc")  
+    }
+
+
+})

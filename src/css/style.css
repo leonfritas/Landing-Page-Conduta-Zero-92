@@ -317,6 +317,10 @@
   display: flex;
 }
 
+input::placeholder{
+  color:white;
+}
+
 /* APÓS O CADASTRO */
 
 .esconder{
