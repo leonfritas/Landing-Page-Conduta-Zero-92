@@ -9,9 +9,12 @@ const disco = document.getElementsByClassName("disco")
 const discodesc = document.getElementsByClassName("discodesc")
 const chamarCarrossel = document.querySelectorAll(".foto")
 const jogo = document.getElementById("jogo")
+const selectCaracter = document.getElementsByClassName('select-caracter')
+const audioGame = document.getElementsByClassName('audioGame')
 
 
-// console.log(chamarCarrossel)
+
+console.log(selectCaracter)
 
 chamarCarrossel.forEach((item) => {
     item.addEventListener("click", ()=>{
@@ -84,8 +87,11 @@ home.addEventListener("click", () => {
     body.classList.remove("mostrar")
     //
     for(i = 0; i <= 9; i++){
-        discodesc[i].classList.remove("mostrardesc")
+        discodesc[i].classList.remove("mostrardesc") 
     }
+    selectCaracter[0].classList.remove('mostrarcaracter')
+    gameBoard[0].classList.remove('mostrargame-board')
+    audioGame[0].src = ''
 })
 
 loja.addEventListener("click", ()=>{
@@ -99,6 +105,9 @@ loja.addEventListener("click", ()=>{
     for(i = 0; i <= 9; i++){
         discodesc[i].classList.remove("mostrardesc") 
     }  
+    selectCaracter[0].classList.remove('mostrarcaracter')
+    gameBoard[0].classList.remove('mostrargame-board')
+    audioGame[0].src = ''
 })
 
 discografia.addEventListener("click", ()=>{
@@ -111,7 +120,10 @@ discografia.addEventListener("click", ()=>{
     body.classList.add("mostrar")
     for(i = 0; i <= 9; i++){
         discodesc[i].classList.remove("mostrardesc")  
-    }   
+    }  
+    selectCaracter[0].classList.remove('mostrarcaracter') 
+    gameBoard[0].classList.remove('mostrargame-board')
+    audioGame[0].src = ''
 })
 
 fotos.addEventListener("click", ()=>{
@@ -125,6 +137,9 @@ fotos.addEventListener("click", ()=>{
     for(i = 0; i <= 9; i++){
         discodesc[i].classList.remove("mostrardesc") 
     }    
+    selectCaracter[0].classList.remove('mostrarcaracter')
+    gameBoard[0].classList.remove('mostrargame-board')
+    audioGame[0].src = ''
 })
 
 contato.addEventListener("click", ()=>{
@@ -139,9 +154,18 @@ contato.addEventListener("click", ()=>{
     for(i = 0; i <= 9; i++){
         discodesc[i].classList.remove("mostrardesc")  
     }
+    selectCaracter[0].classList.remove('mostrarcaracter')
+    gameBoard[0].classList.remove('mostrargame-board')
+    audioGame[0].src = ''
+    
 })
 
 jogo.addEventListener("click", ()=>{
+    console.log(audioGame)
+
+    audioGame[0].src = './src/music/audiogamedk.mp3'
+
+
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
@@ -153,6 +177,9 @@ jogo.addEventListener("click", ()=>{
     for(i = 0; i <= 9; i++){
         discodesc[i].classList.remove("mostrardesc")  
     }
+    selectCaracter[0].classList.add('mostrarcaracter')
+    gameBoard[0].classList.remove('mostrargame-board')
+    
 
 
 })

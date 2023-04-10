@@ -5,7 +5,7 @@
     margin: 0 auto;
     position:relative;
     overflow: hidden;
-    background: url(../images/jogo/fundo.jpg)
+    /* background: url(../images/jogo/fundo.jpg) */
 }
 
 .jogo-container {
@@ -16,22 +16,21 @@
     display: flex;
   }
 
-  .pipe{
+  .obstaculo{
     position:absolute;
     bottom: 0;
     width: 100px;
     right: 200px;
-    animation: pipe-animation 1s infinite linear;
+    animation: obstaculo-animation 1.5s infinite linear;
  
-
-
-
   }
 
-  .leo{
+  .personagem {
     width:150px;
     position: absolute;
     bottom: 0;
+    
+   
     
   }
 
@@ -39,7 +38,7 @@
     animation: jump 500ms  ease-out;
   }
 
-  @keyframes pipe-animation {
+  @keyframes obstaculo-animation {
 
     from{
         right: -200px;
@@ -73,5 +72,89 @@
     100%{
         bottom: 0;
     }
+
+  }
+
+  .game-board{
+    margin-top: 100px;
+    display:none;
+    background: white;
+  }
+
+  .game-board.mostrargame-board{
+    display: flex;
+  }
+
+  .select-caracter{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    gap: 30px;
+    margin-top: 200px;
+    position: relative;
+  }
+
+  .select-caracter{
+    display:none;
+  }
+
+  .select-caracter.mostrarcaracter{
+    display: flex;
+  }
+
+  .tituloPersonagem{
+    position: absolute;
+    color: white;
+    top: -150px;
+  }
+
+  .game{
+
+    width: 100%;
+  }
+  .jogo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  .card-caracter{
+    border: 1px pink solid;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+
+  .card-caracter img{
+    width: 100%;
+  }
+
+  .contador{
+    font-size: 50px;
+    padding: 50px;
+  }
+
+  .botaoReset{
+    position: absolute;
+    top: 100px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .trocarPersonagem{
+    position: absolute;
+    top: 50px;
+    margin: auto;
+    right: 50px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
 
   }

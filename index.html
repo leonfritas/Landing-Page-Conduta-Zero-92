@@ -51,7 +51,7 @@
     </header>
     <main>
     </main>
-    <section class="conteudo home-container ">
+    <section class="conteudo home-container mostrar ">
         <ul class="icones">
             <li class="icon iconspot"><a href="https://open.spotify.com/artist/4EubQP2SiqWFpfzPUzaiHu"
                     target="_blank"><img src="src/images/spotify.png"></a></li>
@@ -691,17 +691,30 @@
     </section>
 
 
-    <section class="conteudo jogo-container mostrar">
+    <section class="conteudo jogo-container">
 
-        <div class="game-board">
-
-
-            <img src="./src/images/jogo/leo.jpg" class='leo'alt="">
-            <img  class='pipe'src="./src/images/jogo/cover.png" alt="">
+        <div class="game">
+            <audio class="audioGame"  autoplay ></audio>
+            <div class="select-caracter">
+                <h2 class="tituloPersonagem">Selecione seu personagem</h2>
+                <div class="card-caracter"><img src="./src/images/jogo/cardlacruz.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardrafael.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardpedro.jpg"></div>
+            </div>
+            <div class="game-board">
+                <p class="contador">0</p>
+                <button class="botaoReset">Reiniciar</button>
+                <button class="trocarPersonagem">Escolher outro personagem</button>
+                <img  class='personagem' src="./src/images/jogo/personagemleo.jpg" alt="">
+                <img  class='obstaculo'src="./src/images/jogo/obstaculoleo.png" alt="">
+            </div>
+    
 
 
         </div>
 
+        
         <!-- <button class="botaoPular">Pular</button> -->
 
 
