@@ -55,7 +55,7 @@ const loop = setInterval(()=>{
         // }, 501)
         
         
-
+        audioGame[0].src = './src/music/audiogamefalhou.mp3'
    
         obstaculo.style.animation = 'none'
         obstaculo.style.left = `${obstaculoPosition}px`;
@@ -65,11 +65,11 @@ const loop = setInterval(()=>{
 
         personagem.src = '././src/images/jogo/gameover.png'
 
-        audioGame[0].src = './src/music/audiogamefalhou.mp3'
+        
 
         botaoReset[0].style = 'display: block'
 
-         
+         clearInterval(loop)
 
         botaoReset[0].addEventListener('click', ()=>{
             contador = 0;
@@ -106,7 +106,7 @@ const loop = setInterval(()=>{
             
                     personagem.src = '././src/images/jogo/gameover.png'
             
-                    audioGame[0].src = './src/music/audiogamefalhou.mp3'
+                    //audioGame[0].src = './src/music/audiogamefalhou.mp3'
             
                     botaoReset[0].style = 'display: block'
 
