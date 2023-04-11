@@ -170,6 +170,17 @@
   display: flex;
 }
 
+.voltarDiscografia{
+  padding: 5px;
+}
+
+.sobredisco{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* FOTOS */
 
 .fotos-container {

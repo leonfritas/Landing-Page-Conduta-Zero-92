@@ -11,9 +11,20 @@ const chamarCarrossel = document.querySelectorAll(".foto")
 const jogo = document.getElementById("jogo")
 const selectCaracter = document.getElementsByClassName('select-caracter')
 const audioGame = document.getElementsByClassName('audioGame')
+const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
 
+console.log(voltarDiscografia)
 
+for(i = 0; i < 10; i++){
+voltarDiscografia[i].addEventListener('click', () => {
 
+    for(i = 0; i < 10; i++){
+    discodesc[i].classList.remove("mostrardesc")
+    }
+    containers[2].classList.add("mostrar")
+
+})
+}
 console.log(selectCaracter)
 
 chamarCarrossel.forEach((item) => {
