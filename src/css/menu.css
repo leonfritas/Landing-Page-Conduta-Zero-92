@@ -1,6 +1,6 @@
 body{
     background: url('../images/bg.jpg') no-repeat fixed;
-    /* background-size: cover; */
+    background-size: cover;
     /* transition: 0.5s ease-in-out;
     min-height: 100vh; */
   
