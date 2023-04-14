@@ -10,57 +10,69 @@ let contador = 0
 
 let velocidade = 1.5
 
-console.log(contador)
+
+
+
 
 function contadorfunction(){
     contador++
     contadorHtml[0].innerHTML = contador < 10? '0' + contador : contador
 
-    
-    
-
-    console.log(velocidade)
-
-    console.log(obstaculo.style.animation)
-
     }   
 
     function aumentaVelocidade(){
-        const obstaculoPosition = obstaculo.offsetLeft;
-        console.log(obstaculoPosition)
+        // const obstaculoPosition = obstaculo.offsetLeft;
+        
+        // const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
+        // console.log(obstaculoPosition)
 
 
-        // if (obstaculoPosition < 500){
-        //     velocidade = velocidade + 0.5
-        //     obstaculo.style = `animation: obstaculo-animation ${velocidade}s infinite linear;`
+        // if(obstaculoPosition > 200   &&  personagemPositionRight < obstaculoPosition){
+
+        //     if (contador > 5){
+        //         const obstaculoPosition = obstaculo.offsetLeft;
+        //         // obstaculo.style = 'animation: none;'
+        //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.1}s infinite linear;`
+        //     }
+
+        //     if (contador > 10){
+        //         // obstaculo.style = 'animation: none;'
+        //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.2}s infinite linear;`
+        //     }
+
+        //     if (contador > 15){
+        //         // obstaculo.style = 'animation: none;'
+        //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.3}s infinite linear;`
+        //     }
+        //     console.log(contador)
+        //     console.log(velocidade)
+        //     console.log(obstaculo.style.animation)       
         // }
-        
-        
-        
+  
     }
-
-
 
 const jump = ()=>{
     personagem.classList.add('jump')
+    
+
+    
     //
+    
     setTimeout(()=>{
     personagem.classList.remove('jump')
     const obstaculoPosition = obstaculo.offsetLeft;
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
     const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
 
-    aumentaVelocidade()
+    
     if(obstaculoPosition > 200   &&  personagemPositionRight < obstaculoPosition){
 
         contadorfunction()
-        
+        aumentaVelocidade()
     }
 
     
 }, 500)}
-
-
 
 let urlPersonagem = personagem.src
 
@@ -116,7 +128,7 @@ const loop = setInterval(()=>{
                     clearInterval(loopReset)
  
             
-                    console.log(personagem.src)
+                    
                     obstaculo.style.animation = 'none'
                     obstaculo.style.left = `${obstaculoPosition}px`;
             
@@ -137,7 +149,7 @@ const loop = setInterval(()=>{
     }
 }, 10);
 
-console.log(containers)
+
 
 trocarPersonagem[0].addEventListener('click', ()=>{
     
@@ -163,8 +175,6 @@ trocarPersonagem[0].addEventListener('click', ()=>{
 
             clearInterval(loopReset)
 
-    
-            console.log(personagem.src)
             obstaculo.style.animation = 'none'
             obstaculo.style.left = `${obstaculoPosition}px`;
     
@@ -185,8 +195,8 @@ trocarPersonagem[0].addEventListener('click', ()=>{
 cardCaracter[0].addEventListener('click',()=>{
     selectCaracter[0].classList.remove('mostrarcaracter')
     gameBoard[0].classList.add('mostrargame-board')
-    personagem.src = "./src/images/jogo/personagemlacruz.jpg"
-    obstaculo.src = "./src/images/jogo/obstaculolacruz.jpg"
+    personagem.src = "./src/images/jogo/personagemlacruz.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
@@ -196,7 +206,6 @@ cardCaracter[0].addEventListener('click',()=>{
     botaoReset[0].style = 'display: none'
     loop
     urlPersonagem = personagem.src
-    console.log(loop)
 
 })
 
@@ -204,8 +213,8 @@ cardCaracter[0].addEventListener('click',()=>{
 cardCaracter[1].addEventListener('click', ()=>{
     selectCaracter[0].classList.remove('mostrarcaracter')
     gameBoard[0].classList.add('mostrargame-board')
-    personagem.src = "./src/images/jogo/personagemrafael.jpg"
-    obstaculo.src = "./src/images/jogo/obstaculorafael.jpg"
+    personagem.src = "./src/images/jogo/personagemrafael.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
@@ -220,7 +229,7 @@ cardCaracter[1].addEventListener('click', ()=>{
 cardCaracter[2].addEventListener('click', ()=>{
     selectCaracter[0].classList.remove('mostrarcaracter')
     gameBoard[0].classList.add('mostrargame-board')
-    personagem.src = "./src/images/jogo/personagemleo.jpg"
+    personagem.src = "./src/images/jogo/personagemleo.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     contador = 0;
     contadorHtml[0].innerHTML = contador
@@ -236,8 +245,8 @@ cardCaracter[2].addEventListener('click', ()=>{
 cardCaracter[3].addEventListener('click', ()=>{
     selectCaracter[0].classList.remove('mostrarcaracter')
     gameBoard[0].classList.add('mostrargame-board')
-    personagem.src = "./src/images/jogo/personagempedro.jpg"
-    obstaculo.src = "./src/images/jogo/obstaculopedro.jpg"
+    personagem.src = "./src/images/jogo/personagempedro.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS

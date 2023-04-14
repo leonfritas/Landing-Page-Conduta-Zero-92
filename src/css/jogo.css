@@ -1,3 +1,9 @@
+@font-face{
+  font-family: 'arcadeFont';
+  src: url('../fonts/arcade.ttf');
+}
+
+
 .game-board{
     width: 80%;
     height: 500px;
@@ -5,7 +11,7 @@
     margin: 0 auto;
     position:relative;
     overflow: hidden;
-    /* background: url(../images/jogo/fundo.jpg) */
+    
 }
 
 .jogo-container {
@@ -78,7 +84,8 @@
   .game-board{
     margin-top: 100px;
     display:none;
-    background: white;
+    background: url(../images/jogo/bg-game-board.png) center;
+    background-size: cover;
   }
 
   .game-board.mostrargame-board{
@@ -158,3 +165,43 @@
     cursor: pointer;
 
   }
+
+  .contador{
+    font-family: 'arcadeFont';
+  }
+
+  .card-caracter{
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    /* width: 20%; */
+    height: 200px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
+    
+  }
+
+  .card-caracter.selecionado:hover{
+
+    border: 2px solid var(--cor-azul-media);
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+
+}
+
+  .card-caracter:hover{
+    
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+    transform: scale(1.07);
+    z-index: 2;
+}
+
+.tituloPersonagem{
+  font-family: 'arcadeFont';
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+

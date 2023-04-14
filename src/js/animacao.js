@@ -13,7 +13,7 @@ const selectCaracter = document.getElementsByClassName('select-caracter')
 const audioGame = document.getElementsByClassName('audioGame')
 const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
 
-console.log(voltarDiscografia)
+
 
 for(i = 0; i < 10; i++){
 voltarDiscografia[i].addEventListener('click', () => {
@@ -25,7 +25,7 @@ voltarDiscografia[i].addEventListener('click', () => {
 
 })
 }
-console.log(selectCaracter)
+
 
 chamarCarrossel.forEach((item) => {
     item.addEventListener("click", ()=>{
@@ -190,6 +190,33 @@ jogo.addEventListener("click", ()=>{
     }
     selectCaracter[0].classList.add('mostrarcaracter')
     gameBoard[0].classList.remove('mostrargame-board')
+
+    const loopReset = setInterval(()=>{
+
+        const obstaculoPosition = obstaculo.offsetLeft;
+        const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
+    
+        
+    
+        if (obstaculoPosition < 200 && obstaculoPosition > 0 && personagemPosition < 80){
+
+            clearInterval(loopReset)
+
+    
+            console.log(personagem.src)
+            obstaculo.style.animation = 'none'
+            obstaculo.style.left = `${obstaculoPosition}px`;
+    
+            personagem.style.animation = 'none'
+            personagem.style.bottom = `${personagemPosition}px`;
+    
+            personagem.src = '././src/images/jogo/gameover.png'
+    
+            botaoReset[0].style = 'display: block'
+
+    
+        }
+    }, 10);
     
 
 
