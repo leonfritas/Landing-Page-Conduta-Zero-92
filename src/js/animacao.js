@@ -202,7 +202,8 @@ jogo.addEventListener("click", ()=>{
 
             clearInterval(loopReset)
 
-    
+            audioGame[0].src = './src/music/audiogamefalhou.mp3'
+            
             console.log(personagem.src)
             obstaculo.style.animation = 'none'
             obstaculo.style.left = `${obstaculoPosition}px`;

@@ -4,11 +4,18 @@ const cardCaracter = document.getElementsByClassName('card-caracter')
 const gameBoard = document.getElementsByClassName('game-board')
 const contadorHtml = document.getElementsByClassName('contador') 
 const botaoReset = document.getElementsByClassName('botaoReset')
-const trocarPersonagem =document.getElementsByClassName('trocarPersonagem')
+const trocarPersonagem = document.getElementsByClassName('trocarPersonagem')
+const botaoStart = document.getElementsByClassName('start')
 
 let contador = 0 
 
 let velocidade = 1.5
+
+function startGame(){
+    botaoStart[0].style = 'display: none'
+    obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
+
+}
 
 
 
@@ -106,28 +113,32 @@ const loop = setInterval(()=>{
          clearInterval(loop)
 
         botaoReset[0].addEventListener('click', ()=>{
+            
             contador = 0;
             contadorHtml[0].innerHTML = contador
             gameBoard[0].removeAttributeNS
             obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
             personagem.style.animation = ''
             personagem.style.bottom = 0;
-            botaoReset[0].style = 'display: none'
+            setTimeout(()=>{
+                botaoReset[0].style = 'display: none'
+            }, 100)
+            
             personagem.src = urlPersonagem
 
-            
-
+            audioGame[0].src = './src/music/audiogamedk.mp3'
+        
             const loopReset = setInterval(()=>{
 
                 const obstaculoPosition = obstaculo.offsetLeft;
                 const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
             
-                
+           
             
                 if (obstaculoPosition < 200 && obstaculoPosition > 0 && personagemPosition < 80){
                     clearInterval(loopReset)
  
-            
+                    audioGame[0].src = './src/music/audiogamefalhou.mp3'
                     
                     obstaculo.style.animation = 'none'
                     obstaculo.style.left = `${obstaculoPosition}px`;
@@ -147,6 +158,7 @@ const loop = setInterval(()=>{
         })
         
     }
+    
 }, 10);
 
 
@@ -200,12 +212,14 @@ cardCaracter[0].addEventListener('click',()=>{
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
-    obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
+    obstaculo.style = 'animation: none'
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = 'display: none'
     loop
     urlPersonagem = personagem.src
+    botaoStart[0].style = 'display: block'
+    obstaculo.style = 'display: none'
 
 })
 
@@ -218,12 +232,14 @@ cardCaracter[1].addEventListener('click', ()=>{
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
-    obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
+    obstaculo.style = 'animation: none'
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = 'display: none'
     loop
     urlPersonagem = personagem.src
+    botaoStart[0].style = 'display: block'
+    obstaculo.style = 'display: none'
 } )
 
 cardCaracter[2].addEventListener('click', ()=>{
@@ -234,12 +250,14 @@ cardCaracter[2].addEventListener('click', ()=>{
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
-    obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
+    obstaculo.style = 'animation: none'
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = 'display: none'
     loop
     urlPersonagem = personagem.src
+    botaoStart[0].style = 'display: block'
+    obstaculo.style = 'display: none'
 } )
 
 cardCaracter[3].addEventListener('click', ()=>{
@@ -250,12 +268,14 @@ cardCaracter[3].addEventListener('click', ()=>{
     contador = 0;
     contadorHtml[0].innerHTML = contador
     gameBoard[0].removeAttributeNS
-    obstaculo.style = 'animation: obstaculo-animation 1.5s infinite linear;'
+    obstaculo.style = 'animation: none'
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = 'display: none'
     loop
     urlPersonagem = personagem.src
+    botaoStart[0].style = 'display: block'
+    obstaculo.style = 'display: none'
 } )
 
 

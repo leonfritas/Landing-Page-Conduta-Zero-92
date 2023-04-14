@@ -86,6 +86,7 @@
     display:none;
     background: url(../images/jogo/bg-game-board.png) center;
     background-size: cover;
+    position: relative;
   }
 
   .game-board.mostrargame-board{
@@ -143,17 +144,7 @@
     padding: 50px;
   }
 
-  .botaoReset{
-    position: absolute;
-    top: 100px;
-    margin: auto;
-    right: 0;
-    left: 0;
-    width: 100px;
-    height: 50px;
-    display: none;
-    cursor: pointer;
-  }
+
 
   .trocarPersonagem{
     position: absolute;
@@ -203,5 +194,95 @@
   font-family: 'arcadeFont';
   letter-spacing: 2px;
   font-size: 50px;
+}
+
+.start{
+  position: absolute;
+  top: 100px;
+  margin: auto;
+  right: 0;
+  left: 0;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  font-family: 'arcadeFont';
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+
+.botaoReset{
+  
+  /* width: 100px;
+  height: 20px;
+  display: none;
+  cursor: pointer;
+  
+   */
+}
+
+/* .button{
+  position:relative;
+  display:inline-block;
+  margin:20px;
+} */
+
+.button a{
+  color:black;
+  letter-spacing: 3px;
+  font-family:'arcadeFont', sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:10px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.divBotaoReset{
+  position: absolute;
+  margin: auto;
+  top: 100px;
+  right: 0;
+  left: 0;
+  width: 110px;
+  
 }
 
