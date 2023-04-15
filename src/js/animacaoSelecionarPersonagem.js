@@ -9,6 +9,6 @@ cardPersonagem.forEach((cardPersonagem) => {
     personagemSelecionado.classList.remove("selecionado");
 
     cardPersonagem.classList.add("selecionado");
-    nomeJogador1.innerHTML = nomeSelecionado;
+    
   });
 });

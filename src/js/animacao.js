@@ -11,6 +11,7 @@ const chamarCarrossel = document.querySelectorAll(".foto")
 const jogo = document.getElementById("jogo")
 const selectCaracter = document.getElementsByClassName('select-caracter')
 const audioGame = document.getElementsByClassName('audioGame')
+const audioGameFalhou = document.getElementsByClassName('audioGameFalhou')
 const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
 
 
@@ -174,7 +175,7 @@ contato.addEventListener("click", ()=>{
 jogo.addEventListener("click", ()=>{
     console.log(audioGame)
 
-    audioGame[0].src = './src/music/audiogamedk.mp3'
+    audioGame[0].src = './src/music/audiogamemk.mp3'
 
 
     for(i = 0; i <=6; i++){
@@ -202,7 +203,9 @@ jogo.addEventListener("click", ()=>{
 
             clearInterval(loopReset)
 
-            audioGame[0].src = './src/music/audiogamefalhou.mp3'
+            audioGameFalhou[0].src = './src/music/audiogamefalhou.mp3'
+            mostrarDisqueteSalvar()
+
             
             console.log(personagem.src)
             obstaculo.style.animation = 'none'

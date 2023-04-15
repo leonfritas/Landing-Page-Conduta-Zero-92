@@ -723,13 +723,56 @@
 
         <div class="game">
             <audio class="audioGame"  autoplay ></audio>
+            <audio class="audioGameFalhou" autoplay ></audio>
             <div class="select-caracter">
                 <h2 class="tituloPersonagem">Selecione seu personagem</h2>
                 <div class="card-caracter selecionado"><img src="./src/images/jogo/cardlacruz.jpg"></div>
                 <div class="card-caracter"><img src="./src/images/jogo/cardrafael.jpg"></div>
                 <div class="card-caracter"><img src="./src/images/jogo/cardleo.jpg"></div>
                 <div class="card-caracter"><img src="./src/images/jogo/cardpedro.jpg"></div>
+                <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="divMapas">
+                    <h3>Escolha um local</h3>
+                    <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
+                    <img class="setaMapa setaProximoMapa" src="./src/images/seta.png" alt="">
+                    
+                    <img class="mapa mapa1 mostrarMapa" src="./src/images/jogo/primeiroMapa.png" alt="">
+                    <img class="mapa mapa2" src="./src/images/jogo/segundoMapa.jpg" alt="">
+                    <img class="mapa mapa3" src="./src/images/jogo/terceiroMapa.jpg" alt="">
+                </div>
+                <div class="ranking">
+                    <h3>Ranking</h3>
+                    <table class= 'rankingTable'>
+                        <tr>
+                            <td class="nomeRank">Nome</td>
+                            <td class="scoreRank">Score</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+
+                    </table>
+                </div>
             </div>
+            
             <div class="game-board">
                 <p class="contador">0</p>
                 <div class="divBotaoReset">
@@ -737,10 +780,17 @@
                         <a href="#">Restart</a>
                     </div>
                 </div>
+                <h2 class="msgNovoPersonagem">Novo personagem desbloqueado!</h2>
                 <h2 class="start" onclick="startGame()">Start</h2>
-                <button class="trocarPersonagem">Escolher outro personagem</button>
+                <div class="divBotaoTrocarPersonagem">
+                    <div class="botaoTrocarPersonagem trocarPersonagem">
+                        <a href="#">Escolher outro personagem</a>
+                    </div>
+                </div>
                 <img  class='personagem' src="./src/images/jogo/personagemleo.jpg" alt="">
                 <img  class='obstaculo'src="./src/images/jogo/obstaculoleo.png" alt="">
+                <audio src=""></audio>
+                <img onclick="salvarGame()" class="disqueteSalvar" src="./src/images/jogo/disqueteSalva.png" alt="">
             </div>
     
 
@@ -759,8 +809,8 @@
     <script src="src/js/carrossel.js"></script>
     <script src="src/js/animacao.js"></script>
     <script src="src/js/contato.js"></script>
-    <script src="./db.js"></script>
-    <script src="./app.js"></script>
+    <!-- <script src="./db.js"></script>
+    <script src="./app.js"></script> -->
     <script src="src/js/jogo.js"></script>
     <script src="src/js/animacaoSelecionarPersonagem.js"></script>
 
