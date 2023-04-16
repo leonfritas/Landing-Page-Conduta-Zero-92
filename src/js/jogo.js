@@ -18,7 +18,7 @@ console.log(disqueteSalvar)
 function salvarGame(){
   if (confirm('Deseja salvar o jogo?')){
     if (prompt('Digite seu nome:')){
-      alert('oi')
+      alert(contador)
     }
 
   }
