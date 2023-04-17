@@ -54,35 +54,35 @@ function contadorfunction(){
     
 }   
 
-function aumentaVelocidade(){
-    // const obstaculoPosition = obstaculo.offsetLeft;
+// function aumentaVelocidade(){
+//     // const obstaculoPosition = obstaculo.offsetLeft;
     
-    // const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
-    // console.log(obstaculoPosition)
+//     // const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
+//     // console.log(obstaculoPosition)
 
 
-    // if(obstaculoPosition > 200   &&  personagemPositionRight < obstaculoPosition){
+//     // if(obstaculoPosition > 200   &&  personagemPositionRight < obstaculoPosition){
 
-    //     if (contador > 5){
-    //         const obstaculoPosition = obstaculo.offsetLeft;
-    //         // obstaculo.style = 'animation: none;'
-    //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.1}s infinite linear;`
-    //     }
+//     //     if (contador > 5){
+//     //         const obstaculoPosition = obstaculo.offsetLeft;
+//     //         // obstaculo.style = 'animation: none;'
+//     //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.1}s infinite linear;`
+//     //     }
 
-    //     if (contador > 10){
-    //         // obstaculo.style = 'animation: none;'
-    //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.2}s infinite linear;`
-    //     }
+//     //     if (contador > 10){
+//     //         // obstaculo.style = 'animation: none;'
+//     //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.2}s infinite linear;`
+//     //     }
 
-    //     if (contador > 15){
-    //         // obstaculo.style = 'animation: none;'
-    //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.3}s infinite linear;`
-    //     }
-    //     console.log(contador)
-    //     console.log(velocidade)
-    //     console.log(obstaculo.style.animation)       
-    // }
-}
+//     //     if (contador > 15){
+//     //         // obstaculo.style = 'animation: none;'
+//     //         obstaculo.style = `animation: obstaculo-animation ${velocidade - 0.3}s infinite linear;`
+//     //     }
+//     //     console.log(contador)
+//     //     console.log(velocidade)
+//     //     console.log(obstaculo.style.animation)       
+//     // }
+// }
 
 const jump = ()=>{
     personagem.classList.add('jump')
@@ -93,19 +93,19 @@ const jump = ()=>{
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
     const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
     //
-    if(personagemPositionRight < obstaculoPosition){
+    // if(personagemPositionRight < obstaculoPosition){
         contadorfunction()
-        aumentaVelocidade()
+        // aumentaVelocidade()
         // alert('contou')
-    } 
+    // } 
 }, 500)}
 
 let urlPersonagem = personagem.src
 
-function perdeuOJogo(){
+// function perdeuOJogo(){
 
   
-}
+// }
 
 const loop = setInterval(()=>{
 
@@ -228,7 +228,7 @@ trocarPersonagem[0].addEventListener('click', ()=>{
 },200)   
 })
 
-function cadCaracterStartGame(){
+function cardCaracterStartGame(){
   selectCaracter[0].classList.remove('mostrarcaracter')
   gameBoard[0].classList.add('mostrargame-board')
   contador = 0;
@@ -250,7 +250,7 @@ cardCaracter[0].addEventListener('click',()=>{
     
     personagem.src = "./src/images/jogo/personagemlacruz.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cadCaracterStartGame()
+    cardCaracterStartGame()
 
 })
 
@@ -259,14 +259,14 @@ cardCaracter[1].addEventListener('click', ()=>{
    
     personagem.src = "./src/images/jogo/personagemrafael.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cadCaracterStartGame()
+    cardCaracterStartGame()
 })
 
 /* LEO */
 cardCaracter[2].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemleo.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cadCaracterStartGame()
+    cardCaracterStartGame()
 })
 
 /* PEDRO */
@@ -274,7 +274,7 @@ cardCaracter[3].addEventListener('click', ()=>{
     
     personagem.src = "./src/images/jogo/personagempedro.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cadCaracterStartGame()
+    cardCaracterStartGame()
 })
 
 /* SERGIO */
@@ -282,7 +282,7 @@ cardCaracter[4].addEventListener('click', ()=>{
   
   personagem.src = "./src/images/jogo/personagemleo.gif"
   obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-  cadCaracterStartGame()
+  cardCaracterStartGame()
 })
 
 
