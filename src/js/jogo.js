@@ -93,7 +93,7 @@ const jump = ()=>{
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
     const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
     //
-    if(obstaculoPosition > 200   &&  personagemPositionRight < obstaculoPosition){
+    if(personagemPositionRight < obstaculoPosition){
         contadorfunction()
         aumentaVelocidade()
         // alert('contou')
