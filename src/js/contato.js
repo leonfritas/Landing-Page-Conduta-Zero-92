@@ -10,8 +10,6 @@ const cadastroContainer = document.getElementsByClassName('contato-container')
 
 
 
-
-
 const ingresso = (event)=>{
     if (campoNome.value != '' &&
         campoEmail.value != '' &&
