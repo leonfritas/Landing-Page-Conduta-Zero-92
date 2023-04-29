@@ -1,6 +1,6 @@
 @media(max-width: 450px){
     .jogo-container{
-        margin: 100px 0 0 0;
+        margin: 0 0 0 0;
 
     }
 
@@ -44,7 +44,7 @@
 
         position: relative;
         flex-wrap: wrap;
-        margin-top: 0;
+        margin-top: 100px;
       }
 
       .select-caracter h2{
@@ -63,5 +63,10 @@
       
       .card-caracter img{
         width: 100%;
+      }
+
+      .game-board{
+        height: 400px;
+        margin-top: 20px;
       }
 }
