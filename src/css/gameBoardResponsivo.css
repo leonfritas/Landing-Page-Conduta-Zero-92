@@ -1,72 +1,3 @@
-@media(max-width: 450px){
-    .jogo-container{
-        margin: 0 0 0 0;
-
-    }
-
-    .divMapas{
-        position: absolute;
-        margin: auto;
-        right: 0;
-        left: 0;
-        width: 200px;
-        height: 150px;
-        bottom: -200px;
-        
-    }
-
-    .divMapas h3{
-        top: -40px;
-      }
-
-      .setaMapa{
-        width: 30px;
-        cursor: pointer;
-        position: absolute;
-        bottom: 50px;
-      }
-
-    .ranking{
-        position:absolute;
-        bottom: -350px;
-        margin: auto;
-        right: 0;
-        left: 0;
-        width: 300px;
-        height: 100px;
-    }
-
-    .select-caracter{
-        
-        justify-content: space-evenly;
-        height: 400px;
-        gap: 10px;
-
-        position: relative;
-        flex-wrap: wrap;
-        margin-top: 100px;
-      }
-
-      .select-caracter h2{
-        text-align: center;
-        font-size: 25px;
-        top: -70px;
-      }
-
-    .card-caracter{
-        border: 1px pink solid;
-        width: 150px;
-        height: 150px;
-        cursor: pointer;
-       
-      }
-      
-      .card-caracter img{
-        width: 100%;
-      }
-
-      
-}
 @media(max-width: 768px){
 
     .botaoTrocarPersonagem a{
@@ -78,9 +9,11 @@
     .botaoTrocarPersonagem{
         right: 0;
     }
-    nav{
-        justify-content: space-evenly;
+    .cabecalho{
+        justify-content: space-around;
+        gap: 100px;
     }
+    
     .menu{
         gap: 15px;
         font-size: 20px;
@@ -153,4 +86,76 @@
     }
 
 }
+
+
+@media(max-width: 460px){
+    .jogo-container{
+        margin: 0 0 0 0;
+
+    }
+
+    .divMapas{
+        position: absolute;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 200px;
+        height: 150px;
+        bottom: -200px;
+        
+    }
+
+    .divMapas h3{
+        top: -40px;
+      }
+
+      .setaMapa{
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 50px;
+      }
+
+    .ranking{
+        position:absolute;
+        bottom: -350px;
+        margin: auto;
+        right: 0;
+        left: 0;
+        width: 300px;
+        height: 100px;
+    }
+
+    .select-caracter{
+        
+        justify-content: space-evenly;
+        height: 400px;
+        gap: 10px;
+
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 100px;
+      }
+
+      .select-caracter h2{
+        text-align: center;
+        font-size: 25px;
+        top: -70px;
+      }
+
+    .card-caracter{
+        border: 1px pink solid;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+       
+      }
+      
+      .card-caracter img{
+        width: 100%;
+      }
+
+      
+}
+
 
