@@ -2,8 +2,7 @@
 
     .botaoTrocarPersonagem a{
         font-size: 10px;
-        width: 100px;
-        
+        width: 100px;   
     }
 
     .botaoTrocarPersonagem{
@@ -22,6 +21,8 @@
     .game-board{
         height: 400px;
         margin-top: 20px;
+        width: 100vw;
+        /* height: 100vh; */
     }
 
     .divMapas{
