@@ -350,4 +350,5 @@ function mostrarOuEsconderSetasMapa() {
 
 document.addEventListener('keydown', jump);
 
-document.addEventListener('click', jump);
+personagem.addEventListener('click', jump);
+
