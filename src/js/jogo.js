@@ -348,4 +348,6 @@ function mostrarOuEsconderSetasMapa() {
   }
 }
 
-document.addEventListener('keydown', jump)
+document.addEventListener('keydown', jump);
+
+document.addEventListener('click', jump);

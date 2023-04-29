@@ -13,6 +13,7 @@ const selectCaracter = document.getElementsByClassName('select-caracter')
 const audioGame = document.getElementsByClassName('audioGame')
 const audioGameFalhou = document.getElementsByClassName('audioGameFalhou')
 const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
+let menuHamburguer = document.getElementById('menu-hamburguer')
 
 
 
@@ -94,6 +95,7 @@ home.addEventListener("click", () => {
     for(i = 0; i <= 6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
     containers[0].classList.add("mostrar")
     //
     body.classList.remove("mostrar")
@@ -110,6 +112,7 @@ loja.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
     //
     containers[1].classList.add("mostrar")
     //
@@ -126,6 +129,7 @@ discografia.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
     //
     containers[2].classList.add("mostrar")
     //
@@ -142,6 +146,7 @@ fotos.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
     //
     containers[3].classList.add("mostrar")
     //
@@ -158,6 +163,7 @@ contato.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    menuHamburguer.checked = false;
     //
     containers[5].classList.add("mostrar")
     //
@@ -173,7 +179,9 @@ contato.addEventListener("click", ()=>{
 })
 
 jogo.addEventListener("click", ()=>{
-    console.log(audioGame)
+    console.log(menuHamburguer)
+
+    menuHamburguer.checked = false;
 
     audioGame[0].src = audioStartGame
 
