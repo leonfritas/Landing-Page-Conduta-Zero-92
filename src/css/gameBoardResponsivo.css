@@ -65,8 +65,21 @@
         width: 100%;
       }
 
-      .game-board{
+      
+}
+@media(max-width: 768px){
+    nav{
+        justify-content: space-evenly;
+    }
+    .menu{
+        gap: 15px;
+        font-size: 20px;
+    }
+
+    .game-board{
         height: 400px;
         margin-top: 20px;
-      }
+    }
+
 }
+
