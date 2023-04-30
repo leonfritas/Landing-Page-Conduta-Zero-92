@@ -99,6 +99,7 @@ home.addEventListener("click", () => {
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
     containers[0].classList.add("mostrar")
     //
     body.classList.remove("mostrar")
@@ -116,6 +117,7 @@ loja.addEventListener("click", ()=>{
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
     //
     containers[1].classList.add("mostrar")
     //
@@ -133,6 +135,7 @@ discografia.addEventListener("click", ()=>{
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
     //
     containers[2].classList.add("mostrar")
     //
@@ -150,6 +153,7 @@ fotos.addEventListener("click", ()=>{
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
     //
     containers[3].classList.add("mostrar")
     //
@@ -167,6 +171,7 @@ contato.addEventListener("click", ()=>{
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
     //
     containers[5].classList.add("mostrar")
     //
@@ -183,11 +188,8 @@ contato.addEventListener("click", ()=>{
 
 jogo.addEventListener("click", ()=>{
     
-    
-  
-    
-    
     menuHamburguer.checked = false;
+    turnYourPhone[0].style = esconderObjeto
 
     audioGame[0].src = audioStartGame
 

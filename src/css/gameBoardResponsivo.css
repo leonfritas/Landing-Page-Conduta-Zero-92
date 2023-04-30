@@ -92,9 +92,9 @@
         display: none;
     }
 
-    .turnYourPhoneImg{
+    /* .turnYourPhoneImg{
         display: none;
-    }
+    } */
 
 }
 
@@ -165,10 +165,6 @@
         width: 100%;
     }
 
-    /* .game{
-        display: none;
-    } */
-
      .game-board{
         height: 0;
         width: 0;  
@@ -195,7 +191,7 @@
         left: 0;
         margin: auto;
         margin-top: 50px;
-        /* display: none; */
+       
     }
    
 }
