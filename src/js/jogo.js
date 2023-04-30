@@ -120,9 +120,9 @@ function verificaWidthGameBoard(){
     turnYourPhone[0].style = mostrarObjeto
     
   }
-  if(gameBoardSize > 10){
-    turnYourPhoneImg.style = esconderObjeto
-  }
+  // if(gameBoardSize > 10){
+  //   turnYourPhoneImg.style = esconderObjeto
+  // }
 }
 
 function ativarContador(){
