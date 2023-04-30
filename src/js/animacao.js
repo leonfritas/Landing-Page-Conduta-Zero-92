@@ -14,6 +14,9 @@ const audioGame = document.getElementsByClassName('audioGame')
 const audioGameFalhou = document.getElementsByClassName('audioGameFalhou')
 const voltarDiscografia = document.getElementsByClassName('voltarDiscografia')
 let menuHamburguer = document.getElementById('menu-hamburguer')
+const turnYourPhone = document.getElementsByClassName('turnYourPhone')
+
+
 
 
 
@@ -179,8 +182,11 @@ contato.addEventListener("click", ()=>{
 })
 
 jogo.addEventListener("click", ()=>{
-    console.log(menuHamburguer)
-
+    
+    
+  
+    
+    
     menuHamburguer.checked = false;
 
     audioGame[0].src = audioStartGame

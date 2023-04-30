@@ -17,25 +17,15 @@ let contador = 0
 let velocidade = 1.5
 let urlPersonagem = personagem.src
 let mapaAtual = 0;
-
 let obstaculoIniciarAnimacao = 'animation: obstaculo-animation 1.5s infinite linear;'
-
 let obstaculoVelocidadeAumentada = 'animation: obstaculo-velocidadeaumentada 1.2s infinite linear;'
-
 let obstaculoVelocidadeAumentada2x = 'animation: obstaculo-velocidadeaumentada2x 900ms infinite linear;'
-
 let obstaculoVelocidadeAumentada3x = 'animation: obstaculo-velocidadeaumentada3x 600ms infinite linear;'
-
 let pararAnimacao = 'none'
-
 let esconderObjeto = 'display: none'
-
 let mostrarObjeto = 'display: block'
-
 let imgGameOver = '././src/images/jogo/gameover.png'
-
 let audioGameOver = './src/music/audiogamefalhou.mp3'
-
 let audioStartGame = './src/music/audiogamemk.mp3'
 
 
@@ -105,7 +95,22 @@ function cardCaracterStartGame(){
   botaoStart[0].style = mostrarObjeto
   obstaculo.style = esconderObjeto
   escondeDisqueteSalvar()
+
+  verificaWidthGameBoard()
+ 
+
 }
+
+function verificaWidthGameBoard(){
+  let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
+  
+  if(gameBoardSize < 2){
+    turnYourPhone[0].style = 'display: block'  
+  }
+
+}
+
+
 
 
 
@@ -114,19 +119,15 @@ function cardCaracterStartGame(){
 const jump = ()=>{
     personagem.classList.add('jump')
 
-  
     //
     setTimeout(()=>{
     personagem.classList.remove('jump')
     const obstaculoPosition = obstaculo.offsetLeft;
     const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
    
-    
     if(personagemPositionRight < obstaculoPosition){
       contadorfunction()
   } 
-    
-   
     
 }, 500)}
 
@@ -135,6 +136,8 @@ const jump = ()=>{
 const loop = setInterval(()=>{
     const obstaculoPosition = obstaculo.offsetLeft;
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
+
+    
     
     /* SE CAIR NO IF O PERSONAGEM PERDE O JOGO */
     if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){ 
@@ -201,6 +204,7 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
+    turnYourPhone[0].style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame
     const loopReset = setInterval(()=>{
