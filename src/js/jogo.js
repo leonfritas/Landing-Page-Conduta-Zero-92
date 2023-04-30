@@ -231,7 +231,7 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
     turnYourPhone[0].style = esconderObjeto
-    turnYourPhoneImg.style = esconderObjeto
+    // turnYourPhoneImg.style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame
     const loopReset = setInterval(()=>{
