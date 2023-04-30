@@ -29,7 +29,6 @@ let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
 
 
-
 /* FUNCÕES */
 
 function salvarGame(){
@@ -57,28 +56,39 @@ function startGame(){
 function contadorfunction(){
     contador++
     contadorHtml[0].innerHTML = contador < 10? '0' + contador : contador 
-    if(contador == 20 && cardCaracter[4].style.display == ''){
-        msgNovoPersonagem[0].classList.add('mostrarMsgNovoPersonagem')
-        setTimeout(()=>{
-            msgNovoPersonagem[0].classList.remove('mostrarMsgNovoPersonagem')
-            cardCaracter[4].classList.add('personagemDesbloqueado')
-            cardCaracter[4].style = mostrarObjeto
-        },6000)
+    //
+    if(contador == 2 && cardCaracter[4].style.display == ''){
+    desbloqueiaPersonagem()
     }
-    if(contador > 4){
-      obstaculo.style = obstaculoVelocidadeAumentada
-    }
-
-    if(contador > 9){
-      obstaculo.style = obstaculoVelocidadeAumentada2x
-    }
-
-    if(contador > 14){
-      obstaculo.style = obstaculoVelocidadeAumentada3x
-    }
-
+    //
+    aumentaVelocidade()
 
 }   
+
+function desbloqueiaPersonagem(){
+    msgNovoPersonagem[0].classList.add('mostrarMsgNovoPersonagem')
+    setTimeout(()=>{
+        msgNovoPersonagem[0].classList.remove('mostrarMsgNovoPersonagem')
+        cardCaracter[4].classList.add('personagemDesbloqueado')
+        cardCaracter[4].style = mostrarObjeto
+    },6000)
+}
+
+
+function aumentaVelocidade(){
+  if(contador > 4){
+    obstaculo.style = obstaculoVelocidadeAumentada
+  }
+
+  if(contador > 9){
+    obstaculo.style = obstaculoVelocidadeAumentada2x
+  }
+
+  if(contador > 14){
+    obstaculo.style = obstaculoVelocidadeAumentada3x
+  }
+
+}
 
 function cardCaracterStartGame(){
   selectCaracter[0].classList.remove('mostrarcaracter')
@@ -95,51 +105,43 @@ function cardCaracterStartGame(){
   botaoStart[0].style = mostrarObjeto
   obstaculo.style = esconderObjeto
   escondeDisqueteSalvar()
-
+  //
   verificaWidthGameBoard()
- 
-
 }
 
 function verificaWidthGameBoard(){
   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
-  
+  //
   if(gameBoardSize < 2){
     turnYourPhone[0].style = 'display: block'  
   }
-
 }
-
-
-
-
 
 /* VARIÁVEIS FUNCIONAIS */
 
 const jump = ()=>{
     personagem.classList.add('jump')
-
     //
-    setTimeout(()=>{
-    personagem.classList.remove('jump')
-    const obstaculoPosition = obstaculo.offsetLeft;
-    const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
-   
-    if(personagemPositionRight < obstaculoPosition){
-      contadorfunction()
-  } 
     
+    //  
+    setTimeout(()=>{
+
+      const obstaculoPosition = obstaculo.offsetLeft;
+      const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
+      console.log(obstaculoPosition)
+  
+      if(obstaculoPosition > personagemPositionRight ){
+        contadorfunction()
+      } 
+
+    personagem.classList.remove('jump')
 }, 500)}
-
-
 
 const loop = setInterval(()=>{
     const obstaculoPosition = obstaculo.offsetLeft;
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
 
-    
-    
-    /* SE CAIR NO IF O PERSONAGEM PERDE O JOGO */
+    /* PERDE O JOGO */
     if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){ 
         clearInterval(loop)
         audioGame[0].src = audioGameOver
@@ -152,7 +154,10 @@ const loop = setInterval(()=>{
         clearInterval(loop)
 
         /* REINICIA AS CONDIÇÕES DE JOGO PARA O PERSONAGEM */ 
-        botaoReset[0].addEventListener('click', ()=>{
+        botaoReset[0].addEventListener('click', (event)=>{
+            
+            event.preventDefault()
+          
             contador = 0;
             contadorHtml[0].innerHTML = contador
             gameBoard[0].removeAttributeNS
@@ -225,8 +230,6 @@ trocarPersonagem[0].addEventListener('click', ()=>{
          
 },200)   
 })
-
-
 
 /* PERSONAGENS */
 

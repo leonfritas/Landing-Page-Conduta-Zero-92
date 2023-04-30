@@ -20,16 +20,8 @@ const ingresso = (event)=>{
             labelInput[i].classList.add('esconder')
         }
         agradecimento[0].classList.remove('esconder')
-        console.log(event)  
-        
-        function enviarParametros(){
-
-            paramNome = campoNome.value
-
-        }
 
         event.preventDefault()
-
 
         const resetarForm = ()=>{
             campoNome.value = '' 
