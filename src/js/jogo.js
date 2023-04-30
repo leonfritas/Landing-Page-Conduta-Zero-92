@@ -117,7 +117,7 @@ function verificaWidthGameBoard(){
   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
   //
   if(gameBoardSize < 3){
-    turnYourPhone[0].style = mostrarObjeto
+    turnYourPhone[0].classList.add('mostrarTurnYourPhone')
     
   }
   // if(gameBoardSize > 10){
@@ -147,9 +147,6 @@ ativarContador()
 const jump = ()=>{
     personagem.classList.add('jump')
     //
-
-     
-   
     setTimeout(()=>{
 
       // const obstaculoPosition = obstaculo.offsetLeft;
@@ -230,7 +227,7 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
-    turnYourPhone[0].style = esconderObjeto
+    turnYourPhone[0].classList.add('esconderTurnYourPhone')
     // turnYourPhoneImg.style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame

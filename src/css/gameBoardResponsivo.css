@@ -1,4 +1,10 @@
+.esconderTurnYourPhone{
+    display: none;
+}
 
+.mostrarTurnYourPhone{
+    display: block;
+}
 
 
 @media(max-width: 1270px){
