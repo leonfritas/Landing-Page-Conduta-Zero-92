@@ -10,6 +10,7 @@ const trocarPersonagem = document.getElementsByClassName('trocarPersonagem')
 const botaoStart = document.getElementsByClassName('start')
 const msgNovoPersonagem = document.getElementsByClassName('msgNovoPersonagem')
 const disqueteSalvar = document.getElementsByClassName('disqueteSalvar')
+const turnYourPhoneImg = document.querySelector('.turnYourPhoneImg')
 
 /* VARIÁVEIS DO JOGO */
 
@@ -27,6 +28,9 @@ let mostrarObjeto = 'display: block'
 let imgGameOver = '././src/images/jogo/gameover.png'
 let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
+
+
+
 
 
 /* FUNCÕES */
@@ -112,27 +116,44 @@ function cardCaracterStartGame(){
 function verificaWidthGameBoard(){
   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
   //
-  if(gameBoardSize < 2){
-    turnYourPhone[0].style = 'display: block'  
+  if(gameBoardSize < 3){
+    turnYourPhone[0].style = mostrarObjeto
+    
+  }
+  if(gameBoardSize > 10){
+    turnYourPhoneImg.style = esconderObjeto
   }
 }
+
+function ativarContador(){
+
+  if(obstaculo.style.animation !== ''){
+
+    alert('1')
+    setInterval(()=>{
+      const obstaculoPositionRight = obstaculo.offsetRight;
+      console.log(obstaculoPositionRight)
+  
+    }, 1)
+
+
+  }
+
+}
+ativarContador()
 
 /* VARIÁVEIS FUNCIONAIS */
 
 const jump = ()=>{
     personagem.classList.add('jump')
     //
-    
-    //  
+
+     
+   
     setTimeout(()=>{
 
-      const obstaculoPosition = obstaculo.offsetLeft;
-      const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
-      console.log(obstaculoPosition)
-  
-      if(obstaculoPosition > personagemPositionRight ){
-        contadorfunction()
-      } 
+      // const obstaculoPosition = obstaculo.offsetLeft;
+      // const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '')
 
     personagem.classList.remove('jump')
 }, 500)}
@@ -210,6 +231,7 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
     turnYourPhone[0].style = esconderObjeto
+    turnYourPhoneImg.style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame
     const loopReset = setInterval(()=>{
@@ -250,7 +272,6 @@ cardCaracter[1].addEventListener('click', ()=>{
 /* LEO */
 cardCaracter[2].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemleo.gif"
-    console.log(personagem.src)
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     cardCaracterStartGame()
 })

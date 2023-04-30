@@ -1,3 +1,6 @@
+
+
+
 @media(max-width: 1270px){
 
     .botaoTrocarPersonagem a{
@@ -78,19 +81,22 @@
         border: 1px pink solid;
         width: 150px;
         height: 150px;
-        cursor: pointer;
-       
+        cursor: pointer;  
     }
       
     .card-caracter img{
         width: 100%;
     }
+
     .turnYourPhone{
         display: none;
     }
 
-}
+    .turnYourPhoneImg{
+        display: none;
+    }
 
+}
 
 @media(max-width: 460px){
     .jogo-container{
@@ -171,32 +177,27 @@
     .turnYourPhone{
         position: absolute;
         margin: auto;
-        top:200px;
+        top: 200px;
         right: 0;
         left: 0;
         color: white;
         text-align: center;
-        display: none;
-    }
-    /*
-    .personagem{
-        display: none;
-    }
-    .botaoTrocarPersonagem{
-        display: none;
-    }
-
-    .contador{
-        display: none;
-    }
-    .start{
-        display: none;
-    }
-    .botaoReset{
-        display: none;
-    } */
-
+        display: none;    
       
+    }
+    .turnYourPhoneImg{
+        margin-top: 50px;
+        text-align: center;
+        width: 150px;
+        position: absolute; 
+        display: flex;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 50px;
+        /* display: none; */
+    }
+   
 }
 
 
