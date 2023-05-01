@@ -146,10 +146,10 @@ const jump = ()=>{
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-        // console.log(obstaculoPosition)  
-        // console.log(personagemPositionRight)
+        console.log(obstaculoPosition)  
+        console.log(personagemPositionRight)
         if(contador <= 10){
-          if(obstaculoPosition > 400 && obstaculoPosition > personagemPositionRight){
+          if(obstaculoPosition > 400 && obstaculoPosition > personagemPositionRight || obstaculoPosition > 1000){
             contadorfunction()  
           }        
         }

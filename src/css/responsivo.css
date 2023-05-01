@@ -195,9 +195,9 @@ nav li{
     border: 2px solid green
   } */
 
-  .icones {
+  /* .icones {
     position: relative;
-  }
+  } */
 
   .home-container {
     min-height: 100vh;
@@ -219,6 +219,16 @@ nav li{
     transition: 0.5s ease-in-out;
   }
 
+  .youtubeHome{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+  }
+
+  .icones{
+    width: 20px;
+  }
 
 
   /* Discografia */
@@ -311,8 +321,12 @@ nav li{
 
   .icones{
     position:absolute;
-    bottom: 65px;
+    bottom: 30px;
     /* display: none; */
+  }
+
+  .divHome{
+    border: 1px solid white;
   }
 
 

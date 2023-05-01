@@ -23,6 +23,8 @@
   align-items: flex-end;
   width: 100%;
   gap: 15px;
+  position: absolute;
+  bottom: 20px;
   /* display: none; */
 }
 
@@ -39,7 +41,7 @@
   flex-direction: column;
   /* border: 1px solid white; */
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -50,6 +52,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.youtubeHome{
+  border: 2px solid white;
+  border-radius: 10px;
 
 }
 
