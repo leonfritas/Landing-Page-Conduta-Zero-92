@@ -21,7 +21,7 @@ let mapaAtual = 0;
 let obstaculoIniciarAnimacao = 'animation: obstaculo-animation 1.5s infinite linear;'
 let obstaculoVelocidadeAumentada = 'animation: obstaculo-velocidadeaumentada 1.2s infinite linear;'
 let obstaculoVelocidadeAumentada2x = 'animation: obstaculo-velocidadeaumentada2x 900ms infinite linear;'
-let obstaculoVelocidadeAumentada3x = 'animation: obstaculo-velocidadeaumentada3x 600ms infinite linear;'
+let obstaculoVelocidadeAumentada3x = 'animation: obstaculo-velocidadeaumentada3x 700ms infinite linear;'
 let pararAnimacao = 'none'
 let esconderObjeto = 'display: none'
 let mostrarObjeto = 'display: block'
@@ -137,20 +137,41 @@ function audioPlayPause(){
 
 const jump = ()=>{
     personagem.classList.add('jump')
+    const gameBoardPosition = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');
+    // console.log(gameBoardPosition)
+    
+    /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS DESKTOP */
+    if (gameBoardPosition > 1000){
+        
+      setTimeout(()=>{
+        const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+        const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
+        // console.log(obstaculoPosition)  
+        // console.log(personagemPositionRight)
+        if(contador <= 10){
+          if(obstaculoPosition > 400 && obstaculoPosition > personagemPositionRight){
+            contadorfunction()  
+          }        
+        }
+      }, 500)
+
+      setTimeout(()=>{
+        if(contador > 10){
+          const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+          console.log(obstaculoPosition) 
+          if(obstaculoPosition > 400){
+            contadorfunction()  
+          }  
+        }
+      }, 500)
+    }
+    
+
+    /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS MOBILE */
     
     setTimeout(()=>{   
     personagem.classList.remove('jump') 
     //
-    /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS */
-    const obstaculoPosition = obstaculo.offsetLeft;
-    console.log(obstaculoPosition)  
-    if(obstaculoPosition > 1000){
-      
-      contadorfunction()  
-
-    }  
-
-
     }, 500)
 }
 
@@ -170,13 +191,6 @@ const loop = setInterval(()=>{
         mostrarDisqueteSalvar()
         botaoReset[0].style = mostrarObjeto
         clearInterval(loop)
-        
-        
-        // if( obstaculoPositionRightWindow == -200){
-        //   console.log(obstaculoPositionRightWindow)
-
-        // }
-        
         
 
         /* REINICIA AS CONDIÇÕES DE JOGO PARA O PERSONAGEM */ 

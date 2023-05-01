@@ -294,6 +294,22 @@ nav li{
     color:white;
   }
 
+  .home-container{
+    min-height: 100vw;
+  }
+  .imgHome{
+    width: 350px;
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .icones{
+    position:absolute;
+    top: 150px;
+    /* display: none; */
+  }
+
+
 }
 
 @media (max-width: 350px) {

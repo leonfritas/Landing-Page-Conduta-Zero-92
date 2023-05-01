@@ -23,6 +23,7 @@
   align-items: flex-end;
   width: 100%;
   gap: 15px;
+  /* display: none; */
 }
 
 .icon {
@@ -35,7 +36,24 @@
 
 .home-container.mostrar {
   display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
 }
+
+.imgHome{
+  width: 500px;
+  text-align: center;
+  /* margin-right: 50px; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+
 
 /* LOJA */
 
