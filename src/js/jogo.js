@@ -1,4 +1,3 @@
-
 /* OBJETOS HTML */
 const personagem = document.querySelector('.personagem')
 const obstaculo = document.querySelector('.obstaculo')
@@ -10,7 +9,6 @@ const trocarPersonagem = document.getElementsByClassName('trocarPersonagem')
 const botaoStart = document.getElementsByClassName('start')
 const msgNovoPersonagem = document.getElementsByClassName('msgNovoPersonagem')
 const disqueteSalvar = document.getElementsByClassName('disqueteSalvar')
-const turnYourPhoneImg = document.querySelector('.turnYourPhoneImg')
 
 /* VARIÁVEIS DO JOGO */
 
@@ -28,7 +26,6 @@ let mostrarObjeto = 'display: block'
 let imgGameOver = '././src/images/jogo/gameover.png'
 let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
-
 
 
 
@@ -110,37 +107,37 @@ function cardCaracterStartGame(){
   obstaculo.style = esconderObjeto
   escondeDisqueteSalvar()
   //
-  turnYourPhone[0].classList.add('mostrarTurnYourPhone')
+  verificaWidthGameBoard()
 }
 
-// function verificaWidthGameBoard(){
-//   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
-//   //
-//   // if(gameBoardSize < 3){
-//     turnYourPhone[0].classList.add('mostrarTurnYourPhone')
-    
-//   // }
-//   // if(gameBoardSize > 10){
-//   //   turnYourPhoneImg.style = esconderObjeto
-//   // }
-// }
-
-function ativarContador(){
-
-  if(obstaculo.style.animation !== ''){
-
+function verificaWidthGameBoard(){
+  let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
+  //
+  if(gameBoardSize < 3){
     alert('1')
-    setInterval(()=>{
-      const obstaculoPositionRight = obstaculo.offsetRight;
-      console.log(obstaculoPositionRight)
-  
-    }, 1)
-
-
+    turnYourPhone[0].style = 'display: block'
+    // turnYourPhone[0].classList.remove('esconderTurnYourPhone')
+    // turnYourPhone[0].classList.add('mostrarTurnYourPhone')
+    console.log(turnYourPhone[0].classList) 
   }
-
 }
-ativarContador()
+
+// function ativarContador(){
+
+//   if(obstaculo.style.animation !== ''){
+
+//     alert('1')
+//     setInterval(()=>{
+//       const obstaculoPositionRight = obstaculo.offsetRight;
+//       console.log(obstaculoPositionRight)
+  
+//     }, 1)
+
+
+//   }
+
+// }
+// ativarContador()
 
 /* VARIÁVEIS FUNCIONAIS */
 
