@@ -10,6 +10,7 @@ const botaoStart = document.getElementsByClassName('start')
 const msgNovoPersonagem = document.getElementsByClassName('msgNovoPersonagem')
 const disqueteSalvar = document.getElementsByClassName('disqueteSalvar')
 const imgPlayPause = document.getElementsByClassName('imgPlayPause')
+const tutorial = document.querySelector('.tutorial')
 
 /* VARIÁVEIS DO JOGO */
 
@@ -24,9 +25,15 @@ let obstaculoVelocidadeAumentada3x = 'animation: obstaculo-velocidadeaumentada3x
 let pararAnimacao = 'none'
 let esconderObjeto = 'display: none'
 let mostrarObjeto = 'display: block'
+let mostrarObjetoFlex = 'display: flex'
 let imgGameOver = '././src/images/jogo/gameover.png'
 let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
+
+
+
+
+
 
 /* FUNCÕES */
 
@@ -49,6 +56,7 @@ function mostrarDisqueteSalvar(){
 function startGame(){
     botaoStart[0].style = esconderObjeto
     obstaculo.style = obstaculoIniciarAnimacao
+    tutorial.style = esconderObjeto
 }
 
 function contadorfunction(){
@@ -98,6 +106,7 @@ function cardCaracterStartGame(){
   loop
   urlPersonagem = personagem.src
   botaoStart[0].style = mostrarObjeto
+  tutorial.style = mostrarObjetoFlex
   obstaculo.style = esconderObjeto
   escondeDisqueteSalvar()
   //
