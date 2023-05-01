@@ -9,6 +9,7 @@ const trocarPersonagem = document.getElementsByClassName('trocarPersonagem')
 const botaoStart = document.getElementsByClassName('start')
 const msgNovoPersonagem = document.getElementsByClassName('msgNovoPersonagem')
 const disqueteSalvar = document.getElementsByClassName('disqueteSalvar')
+const imgPlayPause = document.getElementsByClassName('imgPlayPause')
 
 /* VARIÁVEIS DO JOGO */
 
@@ -27,9 +28,6 @@ let imgGameOver = '././src/images/jogo/gameover.png'
 let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
 
-
-
-
 /* FUNCÕES */
 
 function salvarGame(){
@@ -39,7 +37,6 @@ function salvarGame(){
     }
   }
 }
-
 
 function escondeDisqueteSalvar(){
     disqueteSalvar[0].classList.remove('mostrarDisqueteSalvar')
@@ -63,7 +60,6 @@ function contadorfunction(){
     }
     //
     aumentaVelocidade()
-
 }   
 
 function desbloqueiaPersonagem(){
@@ -74,15 +70,6 @@ function desbloqueiaPersonagem(){
         cardCaracter[4].style = mostrarObjeto
     },6000)
 }
-
-
-
-
-
-if(obstaculo.style.animation !== ''){
-  alert('1')
-}
-
 
 function aumentaVelocidade(){
   if(contador > 4){
@@ -96,7 +83,6 @@ function aumentaVelocidade(){
   if(contador > 14){
     obstaculo.style = obstaculoVelocidadeAumentada3x
   }
-
 }
 
 function cardCaracterStartGame(){
@@ -123,30 +109,18 @@ function verificaWidthGameBoard(){
   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
   //
   if(gameBoardSize < 3){
-    alert('1')
     turnYourPhone[0].style = 'display: block'
-    // turnYourPhone[0].classList.remove('esconderTurnYourPhone')
-    // turnYourPhone[0].classList.add('mostrarTurnYourPhone')
-    console.log(turnYourPhone[0].classList) 
   }
 }
 
-// function ativarContador(){
+function audioPlayPause(){ 
+  if(audioGame[0].src == 'http://127.0.0.1:5501/index.html'){
+    audioGame[0].src = audioStartGame
+  }else{
+    audioGame[0].src = '';
+  }
+}
 
-//   if(obstaculo.style.animation !== ''){
-
-//     alert('1')
-//     setInterval(()=>{
-//       const obstaculoPositionRight = obstaculo.offsetRight;
-//       console.log(obstaculoPositionRight)
-  
-//     }, 1)
-
-
-//   }
-
-// }
-// ativarContador()
 
 /* VARIÁVEIS FUNCIONAIS */
 
@@ -174,24 +148,23 @@ const loop = setInterval(()=>{
 
         /* REINICIA AS CONDIÇÕES DE JOGO PARA O PERSONAGEM */ 
         botaoReset[0].addEventListener('click', (event)=>{
-            
             event.preventDefault()
-          
+            //
             contador = 0;
             contadorHtml[0].innerHTML = contador
             gameBoard[0].removeAttributeNS
             obstaculo.style = obstaculoIniciarAnimacao
             personagem.style.animation = ''
             personagem.style.bottom = 0;
-
+            //
             setTimeout(()=>{
                 botaoReset[0].style = esconderObjeto
             }, 100) 
-
+            //
             personagem.src = urlPersonagem
             audioGame[0].src = audioStartGame
             escondeDisqueteSalvar()
-
+            //
             const loopReset = setInterval(()=>{
                 const obstaculoPosition = obstaculo.offsetLeft;
                 const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
