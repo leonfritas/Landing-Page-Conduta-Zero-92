@@ -210,7 +210,8 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
-    turnYourPhone[0].classList.add('esconderTurnYourPhone')
+    // turnYourPhone[0].classList.add('esconderTurnYourPhone')
+    turnYourPhone[0].style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame
     const loopReset = setInterval(()=>{
