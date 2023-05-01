@@ -28,19 +28,12 @@
     width: 100px;
     right: 200px;
     animation: obstaculo-animation 1.5s infinite linear;
-    /* border: 1px solid red; */
- 
   }
 
   .personagem {
     width:150px;
     position: absolute;
     bottom: 0;
-
-    /* border: 1px solid black; */
-    
-   
-    
   }
 
   .jump{
@@ -58,7 +51,6 @@
         right: 100%;
 
     }
-    
   }
 
 

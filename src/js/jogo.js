@@ -76,6 +76,14 @@ function desbloqueiaPersonagem(){
 }
 
 
+
+
+
+if(obstaculo.style.animation !== ''){
+  alert('1')
+}
+
+
 function aumentaVelocidade(){
   if(contador > 4){
     obstaculo.style = obstaculoVelocidadeAumentada
@@ -108,6 +116,7 @@ function cardCaracterStartGame(){
   escondeDisqueteSalvar()
   //
   verificaWidthGameBoard()
+  
 }
 
 function verificaWidthGameBoard(){
@@ -151,7 +160,6 @@ const jump = ()=>{
 const loop = setInterval(()=>{
     const obstaculoPosition = obstaculo.offsetLeft;
     const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
-
     /* PERDE O JOGO */
     if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){ 
         clearInterval(loop)
