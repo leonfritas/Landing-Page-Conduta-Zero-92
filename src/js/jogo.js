@@ -168,10 +168,8 @@ const jump = ()=>{
     
 
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS MOBILE */
+    alert(gameBoardPosition)
     if (gameBoardPosition < 1051){
-      
-         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
-         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
         
         // console.log(obstaculoPosition)
         // console.log(personagemPositionRight)
@@ -179,8 +177,8 @@ const jump = ()=>{
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-        console.log(obstaculoPosition)  
-        console.log(personagemPositionRight)
+        alert(obstaculoPosition)  
+        alert(personagemPositionRight)
         if(contador <= 10){
           if(obstaculoPosition > 600 && obstaculoPosition > personagemPositionRight){
             contadorfunction()  
