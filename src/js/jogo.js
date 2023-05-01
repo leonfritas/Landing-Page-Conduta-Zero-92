@@ -110,20 +110,20 @@ function cardCaracterStartGame(){
   obstaculo.style = esconderObjeto
   escondeDisqueteSalvar()
   //
-  verificaWidthGameBoard()
+  turnYourPhone[0].classList.add('mostrarTurnYourPhone')
 }
 
-function verificaWidthGameBoard(){
-  let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
-  //
-  // if(gameBoardSize < 3){
-    turnYourPhone[0].classList.add('mostrarTurnYourPhone')
+// function verificaWidthGameBoard(){
+//   let gameBoardSize = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');  
+//   //
+//   // if(gameBoardSize < 3){
+//     turnYourPhone[0].classList.add('mostrarTurnYourPhone')
     
-  // }
-  // if(gameBoardSize > 10){
-  //   turnYourPhoneImg.style = esconderObjeto
-  // }
-}
+//   // }
+//   // if(gameBoardSize > 10){
+//   //   turnYourPhoneImg.style = esconderObjeto
+//   // }
+// }
 
 function ativarContador(){
 
