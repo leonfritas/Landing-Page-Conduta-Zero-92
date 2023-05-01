@@ -111,7 +111,6 @@ function cardCaracterStartGame(){
   escondeDisqueteSalvar()
   //
   verificaWidthGameBoard()
-  
 }
 
 function verificaWidthGameBoard(){
@@ -131,23 +130,27 @@ function audioPlayPause(){
 }
 
 
+
+
+
 /* VARIÁVEIS FUNCIONAIS */
 
 const jump = ()=>{
     personagem.classList.add('jump')
+    
+    setTimeout(()=>{   
+    personagem.classList.remove('jump') 
     //
-    setTimeout(()=>{
-    const obstaculoPositionLeft = obstaculo.offsetLeft;
-    const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-    if (personagemPositionRight > obstaculoPositionLeft){ 
+    /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS */
+    const obstaculoPosition = obstaculo.offsetLeft;
+    console.log(obstaculoPosition)  
+    if(obstaculoPosition > 1000){
       
-      contadorfunction()
-    }
-    },100)
+      contadorfunction()  
+
+    }  
 
 
-    setTimeout(()=>{
-    personagem.classList.remove('jump')
     }, 500)
 }
 
@@ -159,12 +162,22 @@ const loop = setInterval(()=>{
         clearInterval(loop)
         audioGame[0].src = audioGameOver
         obstaculo.style.animation = pararAnimacao
-        obstaculo.style.left = `${obstaculoPosition}px`;            
+        obstaculo.style.left = `${obstaculoPosition}px`; 
+        
+                   
         personagem.style.bottom = `${personagemPosition}px`;
         personagem.src = imgGameOver
         mostrarDisqueteSalvar()
         botaoReset[0].style = mostrarObjeto
         clearInterval(loop)
+        
+        
+        // if( obstaculoPositionRightWindow == -200){
+        //   console.log(obstaculoPositionRightWindow)
+
+        // }
+        
+        
 
         /* REINICIA AS CONDIÇÕES DE JOGO PARA O PERSONAGEM */ 
         botaoReset[0].addEventListener('click', (event)=>{
@@ -203,7 +216,8 @@ const loop = setInterval(()=>{
                 }
             }, 10);   
         })    
-    } 
+    }
+     
 }, 10);
 
 
