@@ -137,8 +137,19 @@ const jump = ()=>{
     personagem.classList.add('jump')
     //
     setTimeout(()=>{
+    const obstaculoPositionLeft = obstaculo.offsetLeft;
+    const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
+    if (personagemPositionRight > obstaculoPositionLeft){ 
+      
+      contadorfunction()
+    }
+    },100)
+
+
+    setTimeout(()=>{
     personagem.classList.remove('jump')
-}, 500)}
+    }, 500)
+}
 
 const loop = setInterval(()=>{
     const obstaculoPosition = obstaculo.offsetLeft;
@@ -210,8 +221,8 @@ trocarPersonagem[0].addEventListener('click', ()=>{
     personagem.style.animation = ''
     personagem.style.bottom = 0;
     botaoReset[0].style = esconderObjeto
-    // turnYourPhone[0].classList.add('esconderTurnYourPhone')
-    turnYourPhone[0].style = esconderObjeto
+    turnYourPhone[0].classList.add('esconderTurnYourPhone')
+    // turnYourPhone[0].style = esconderObjeto
     escondeDisqueteSalvar()
     audioGame[0].src = audioStartGame
     const loopReset = setInterval(()=>{
