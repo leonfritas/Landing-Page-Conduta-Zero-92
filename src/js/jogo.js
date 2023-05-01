@@ -168,33 +168,34 @@ const jump = ()=>{
     
 
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS MOBILE */
-    alert(gameBoardPosition)
+    
     if (gameBoardPosition < 1051){
         
         // console.log(obstaculoPosition)
         // console.log(personagemPositionRight)
         
       setTimeout(()=>{
-        const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+        const obstaculoPosition = +window.getComputedStyle(obstaculo).right.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-        alert(obstaculoPosition)  
-        alert(personagemPositionRight)
-        if(contador <= 10){
-          if(obstaculoPosition > 600 && obstaculoPosition > personagemPositionRight){
+        console.log(obstaculoPosition)  
+        console.log(personagemPositionRight)
+        // if(contador <= 10){
+          if(obstaculoPosition < 0 || obstaculoPosition > 400 || obstaculoPosition > 13000 ){
+
             contadorfunction()  
           }        
-        }
+        // }
       }, 500)
 
-      setTimeout(()=>{
-        if(contador > 10){
-          const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
-          console.log(obstaculoPosition) 
-          if(obstaculoPosition > 600){
-            contadorfunction()  
-          }  
-        }
-      }, 500)
+      // setTimeout(()=>{
+      //   if(contador > 10){
+      //     const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+      //     console.log(obstaculoPosition) 
+      //     if(obstaculoPosition > 600){
+      //       contadorfunction()  
+      //     }  
+      //   }
+      // }, 500)
      }
     
     setTimeout(()=>{   
