@@ -19,7 +19,6 @@ const turnYourPhone = document.getElementsByClassName('turnYourPhone')
 
 
 
-
 for(i = 0; i < 10; i++){
 voltarDiscografia[i].addEventListener('click', () => {
 
@@ -99,6 +98,9 @@ home.addEventListener("click", () => {
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
+
+    body.style.background = 'url(../images/bgResponsivoHome.jpg) no-repeat center;'
+    
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto
     containers[0].classList.add("mostrar")
@@ -117,6 +119,8 @@ loja.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    console.log(body.style)
+    body.style.backgroundImage ='url(src/images/bgResponsivo.jpg);'
     menuHamburguer.checked = false;
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto

@@ -14,7 +14,7 @@
 
 .home-container {
   min-height: 80vh;
-  animation: debaixoparacima 0.5s;
+  /* animation: debaixoparacima 0.5s; */
 }
 
 .icones {

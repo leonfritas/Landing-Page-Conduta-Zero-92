@@ -1,9 +1,9 @@
 @media (max-width: 650px) {
   body {
 
-    background: url(../images/bgResponsivo.jpg) no-repeat center;
+    background: url(../images/bgResponsivoHome.jpg) no-repeat center;
     background-size: cover;
-     background-attachment: fixed;
+    background-attachment: fixed;
   }
 
   /* Menu */
@@ -297,15 +297,21 @@ nav li{
   .home-container{
     min-height: 100vw;
   }
+
+ 
   .imgHome{
     width: 350px;
     position: absolute;
     bottom: -100px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: none;
   }
 
   .icones{
     position:absolute;
-    top: 150px;
+    bottom: 65px;
     /* display: none; */
   }
 

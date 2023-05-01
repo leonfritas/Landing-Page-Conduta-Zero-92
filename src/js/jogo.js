@@ -63,7 +63,7 @@ function contadorfunction(){
     contador++
     contadorHtml[0].innerHTML = contador < 10? '0' + contador : contador 
     //
-    if(contador == 2 && cardCaracter[4].style.display == ''){
+    if(contador == 20 && cardCaracter[4].style.display == ''){
     desbloqueiaPersonagem()
     }
     //
@@ -141,7 +141,7 @@ const jump = ()=>{
     // console.log(gameBoardPosition)
     
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS DESKTOP */
-    if (gameBoardPosition > 1000){
+    if (gameBoardPosition > 1051){
         
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
@@ -168,6 +168,36 @@ const jump = ()=>{
     
 
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS MOBILE */
+    if (gameBoardPosition < 1051){
+      
+         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
+        
+        // console.log(obstaculoPosition)
+        // console.log(personagemPositionRight)
+        
+      setTimeout(()=>{
+        const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+        const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
+        console.log(obstaculoPosition)  
+        console.log(personagemPositionRight)
+        if(contador <= 10){
+          if(obstaculoPosition > 600 && obstaculoPosition > personagemPositionRight){
+            contadorfunction()  
+          }        
+        }
+      }, 500)
+
+      setTimeout(()=>{
+        if(contador > 10){
+          const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
+          console.log(obstaculoPosition) 
+          if(obstaculoPosition > 600){
+            contadorfunction()  
+          }  
+        }
+      }, 500)
+     }
     
     setTimeout(()=>{   
     personagem.classList.remove('jump') 
