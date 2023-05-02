@@ -19,17 +19,14 @@
 
 .icones {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  gap: 15px;
+  justify-content: space-around;
+  flex-direction: row;
+  /* align-items: center; */
+  width: 300px;
+  /* gap: 15px; */
   position: absolute;
   bottom: 20px;
-  /* display: none; */
-}
-
-.icon {
-  margin-bottom: 10px;
+  border: orange 2PX SOLID;
 }
 
 .home-container {

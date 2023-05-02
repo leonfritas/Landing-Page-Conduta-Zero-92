@@ -220,15 +220,13 @@ nav li{
   }
 
   .youtubeHome{
-    height: 200px;
-    width: 300px;
+    height: 150px;
+    width: 250px;
     position: absolute;
-    top: 200px;
+    top: 150px;
   }
 
-  .icones{
-    width: 20px;
-  }
+  
 
 
   /* Discografia */
@@ -321,14 +319,19 @@ nav li{
 
   .icones{
     position:absolute;
-    bottom: 30px;
-    /* display: none; */
+    bottom: 25px;
+   
+    border: 1px solid black;
+  
   }
 
   .divHome{
     border: 1px solid white;
   }
 
+  .imgIcon{
+    width: 50px;
+  }
 
 }
 
