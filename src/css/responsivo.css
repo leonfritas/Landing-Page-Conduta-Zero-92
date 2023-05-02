@@ -195,9 +195,7 @@ nav li{
     border: 2px solid green
   } */
 
-  /* .icones {
-    position: relative;
-  } */
+  
 
   .home-container {
     min-height: 100vh;
@@ -320,9 +318,9 @@ nav li{
   .icones{
     position:absolute;
     bottom: 25px;
-   
+    width: 250px;
     border: 1px solid black;
-  
+    bottom: 40px;
   }
 
   .divHome{
