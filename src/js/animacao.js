@@ -19,6 +19,7 @@ const turnYourPhone = document.getElementsByClassName('turnYourPhone')
 
 
 
+
 for(i = 0; i < 10; i++){
 voltarDiscografia[i].addEventListener('click', () => {
 
@@ -98,8 +99,8 @@ home.addEventListener("click", () => {
         containers[i].classList.remove("mostrar")
     }
     menuHamburguer.checked = false;
-
-    body.style.background = 'url(../images/bgResponsivoHome.jpg) no-repeat center;'
+    body.classList.remove('background')
+    
     
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto
@@ -119,8 +120,8 @@ loja.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
-    console.log(body.style)
-    body.style.backgroundImage ='url(src/images/bgResponsivo.jpg);'
+    console.log(body)
+    body.classList.add('background')
     menuHamburguer.checked = false;
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto
@@ -140,6 +141,7 @@ discografia.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
     menuHamburguer.checked = false;
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto
@@ -159,6 +161,7 @@ fotos.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
     menuHamburguer.checked = false;
     turnYourPhone[0].style = esconderObjeto
     imgPlayPause[0].style = esconderObjeto
@@ -178,6 +181,7 @@ contato.addEventListener("click", ()=>{
     for(i = 0; i <=6; i++){
         containers[i].classList.remove("mostrar")
     }
+    body.classList.add('background')
     menuHamburguer.checked = false;
     imgPlayPause[0].style = esconderObjeto
     
@@ -197,7 +201,7 @@ contato.addEventListener("click", ()=>{
 })
 
 jogo.addEventListener("click", ()=>{
-    
+    body.classList.add('background')
     menuHamburguer.checked = false;
 
     turnYourPhone[0].classList.add('esconderTurnYourPhone')
@@ -224,9 +228,7 @@ jogo.addEventListener("click", ()=>{
 
         const obstaculoPosition = obstaculo.offsetLeft;
         const personagemPosition = +window.getComputedStyle(personagem).bottom.replace('px', '');
-    
-        
-    
+  
         if (obstaculoPosition < 100 && obstaculoPosition > 0 && personagemPosition < 80){
 
             clearInterval(loopReset)
@@ -246,10 +248,7 @@ jogo.addEventListener("click", ()=>{
     
             botaoReset[0].style = mostrarObjeto
 
-    
         }
     }, 10);
     
-
-
 })

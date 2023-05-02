@@ -30,11 +30,6 @@ let imgGameOver = '././src/images/jogo/gameover.png'
 let audioGameOver = './src/music/audiogamefalhou.mp3'
 let audioStartGame = './src/music/audiogamemk.mp3'
 
-
-
-
-
-
 /* FUNCÕES */
 
 function salvarGame(){
@@ -129,10 +124,6 @@ function audioPlayPause(){
   }
 }
 
-
-
-
-
 /* VARIÁVEIS FUNCIONAIS */
 
 const jump = ()=>{
@@ -170,10 +161,6 @@ const jump = ()=>{
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS MOBILE */
     
     if (gameBoardPosition < 1051){
-        
-        // console.log(obstaculoPosition)
-        // console.log(personagemPositionRight)
-        
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).right.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
@@ -186,16 +173,6 @@ const jump = ()=>{
           }        
         // }
       }, 500)
-
-      // setTimeout(()=>{
-      //   if(contador > 10){
-      //     const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
-      //     console.log(obstaculoPosition) 
-      //     if(obstaculoPosition > 600){
-      //       contadorfunction()  
-      //     }  
-      //   }
-      // }, 500)
      }
     
     setTimeout(()=>{   
@@ -212,15 +189,12 @@ const loop = setInterval(()=>{
         clearInterval(loop)
         audioGame[0].src = audioGameOver
         obstaculo.style.animation = pararAnimacao
-        obstaculo.style.left = `${obstaculoPosition}px`; 
-        
-                   
+        obstaculo.style.left = `${obstaculoPosition}px`;            
         personagem.style.bottom = `${personagemPosition}px`;
         personagem.src = imgGameOver
         mostrarDisqueteSalvar()
         botaoReset[0].style = mostrarObjeto
         clearInterval(loop)
-        
 
         /* REINICIA AS CONDIÇÕES DE JOGO PARA O PERSONAGEM */ 
         botaoReset[0].addEventListener('click', (event)=>{

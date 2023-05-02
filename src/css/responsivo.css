@@ -1,7 +1,33 @@
+@media(max-width: 1000px){
+
+  .imgHome{
+    width: 250px;
+
+  }
+
+  .youtubeHome{
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    top: 150px;
+  }
+}
+
 @media (max-width: 650px) {
   body {
-
     background: url(../images/bgResponsivoHome.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .backgroundHome{
+    background: url(../images/bgResponsivoHome.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .background{
+    background: url(../images/bgResponsivo.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
   }
