@@ -319,7 +319,7 @@ nav li{
     position:absolute;
     bottom: 25px;
     width: 250px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     bottom: 40px;
   }
 
